@@ -46,3 +46,6 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+gem 'therubyracer'
+gem 'less-rails'
+gem 'font-awesome-less'
