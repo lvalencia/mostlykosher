@@ -1,14 +1,16 @@
-<nav class="sticky navigation">
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="<%= 'active' if params[:controller] == 'oprah/queue' %>"><%= link_to do %><i class="fa fa-home"></i><% end %></li>
-        <li class="<%= 'active' if params[:controller] == 'oprah/queue' %>"><%= link_to 'News' %></li>
-        <li class="<%= 'active' if params[:controller] == 'oprah/queue' %>"><%= link_to 'Music' %></li>
-        <li class="<%= 'active' if params[:controller] == 'oprah/queue' %>"><%= link_to 'Shows' %></li>
-        <li class="<%= 'active' if params[:controller] == 'oprah/queue' %>"><%= link_to 'About' %></li>
-        <li class="<%= 'active' if params[:controller] == 'oprah/queue' %>"><%= link_to 'Gallery' %></li>
-        <li class="<%= 'active' if params[:controller] == 'oprah/queue' %>"><%= link_to 'Shop' %></li>
-        <li class="<%= 'active' if params[:controller] == 'oprah/queue' %>"><%= link_to 'Contact' %></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-</nav>
+<div class="row">
+   <div class="top">
+      <nav class="sticky navigation">
+         <ul class="nav navbar-nav">
+            <li class="active"><a href="/"><i class="fa fa-home"></i></a></li>
+            <li class="active"><a href="/">News</a></li>
+            <li class="active"><a href="/">Music</a></li>
+            <li class="active"><a href="/">Shows</a></li>
+            <li class="active"><a href="/">About</a></li>
+            <li class="active"><a href="/">Gallery</a></li>
+            <li class="active"><a href="/">Shop</a></li>
+            <li class="active"><a href="/">Contact</a></li>
+         </ul>
+      </nav>
+   </div>
+</div>
