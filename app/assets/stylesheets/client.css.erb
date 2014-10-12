@@ -3,6 +3,15 @@
    font-family:kosher;
    src: url('stencilstd.otf');
 }
+@font-face {
+   font-family:railway;
+   src: url('raleway-regular.otf');
+}
+@font-face {
+   font-family:railway;
+   src: url('raleway-light.otf');
+   font-weight:lighter;
+}
 .kosher {
    font-family:kosher;
 }
@@ -40,10 +49,12 @@ nav {
 .nav{
    margin: 0 25%;
 }
-.nav li{
+.nav li,
+.social-media li{
     display:inline;
 }
-.nav a{
+.nav a,
+.social-media a{
     display:inline-block;
     padding:10px;
 }
@@ -98,7 +109,8 @@ nav {
    text-align:center;
    width:100%;
 }
-.text-overlay {
+.text-overlay,
+.news-media {
    z-index:10;
 }
 .left-center {
@@ -107,6 +119,35 @@ nav {
     left: 30%;
     text-align:left;
 }
+@media(max-width:768px) {
+   .left-center {
+      float:none;
+      position:initial;
+      text-align:center;
+   }
+}
 .news-media {
-   top:50%;
+   top:30%;
+}
+.news-media .content a, 
+.news-media .content h2, 
+.news-media .content ul li a {
+   font-family:railway;
+   color:#fff;
+}
+.news-media .content h2 {
+   font-size:2.5em;
+}
+.news-media .content a {
+   font-weight:lighter;
+}
+.news-media ul {
+   padding-left:0px;
+   font-size:2.75em;
+}
+.news-media ul li{
+   opacity:0.75;
+}
+.news-media ul li:hover{
+   opacity:1;
 }
