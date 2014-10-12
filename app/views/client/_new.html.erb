@@ -4,10 +4,15 @@
     </div>
     <div class="new-content">
        <div class="main">
-          <%= render partial: 'card_info', :locals => { title:"News", sign:"star", posts:@news_posts } %>
-          <%= render partial: 'card_info', :locals => { title:"Facebook", sign:"facebook-square", posts:@facebook_posts } %>
-          <%= render partial: 'card_info', :locals => { title:"Reviews", sign:"thumbs-o-up", review:@reviews } %>
-          <span class="stretch"></span>
+           <div class="cards">
+             <%= render partial: 'card_info', :locals => { title:"News", sign:"star", posts:@news_posts, link: "/"} %>
+             <%= render partial: 'card_info', :locals => { title:"Facebook", sign:"facebook-square", posts:@facebook_posts, link:"/" } %>
+             <%= render partial: 'card_info', :locals => { title:"Reviews", sign:"thumbs-o-up", review:@reviews, link:"/"} %>
+             <span class="stretch"></span> 
+          </div>
+          <div class="press">
+             <span>With the press? Download our press kit <a href="/">here</a> (PDF).</span>
+          </div>
        </div>
     </div>
 </div>

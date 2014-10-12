@@ -22,6 +22,14 @@
                </div>
             </div>
          <% end %>
+         <% if posts.count == 0 %>
+            <div class="filler">
+               <h4>Stay Tuned for Updates and More!</h4>
+            </div>
+         <% end %>
       <% end %>
+   </div>
+   <div class="footer">
+      <a href="<%= link %>">MORE</a>
    </div>
 </div>
