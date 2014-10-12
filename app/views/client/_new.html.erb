@@ -4,8 +4,8 @@
     </div>
     <div class="new-content">
        <div class="main">
-          <%= render partial: 'card_info', :locals => { title:"News", sign:"star", posts:@posts } %>
-          <%= render partial: 'card_info', :locals => { title:"Facebook", sign:"facebook-square", posts:@posts } %>
+          <%= render partial: 'card_info', :locals => { title:"News", sign:"star", posts:@news_posts } %>
+          <%= render partial: 'card_info', :locals => { title:"Facebook", sign:"facebook-square", posts:@facebook_posts } %>
           <%= render partial: 'card_info', :locals => { title:"Reviews", sign:"thumbs-o-up", review:@reviews } %>
           <span class="stretch"></span>
        </div>

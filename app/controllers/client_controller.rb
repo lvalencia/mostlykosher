@@ -1,6 +1,7 @@
 class ClientController < ApplicationController
    def landing
       @reviews = Review.latest_reviews
-      @posts = Post.latest_news_posts
+      @news_posts = Post.latest_news_posts
+      @facebook_posts = Post.latest_facebook_posts
    end
 end

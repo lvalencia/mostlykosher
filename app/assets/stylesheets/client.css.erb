@@ -29,9 +29,11 @@ body {
 }
 .top {
    min-height:50px;
-   background:#333; 
+   background:#111; 
    width:100%;
    text-align:center;
+   font-family: 'Lato', sans-serif;
+   font-size:1em;
 }
 .top ul a {
    color:#fff;
@@ -51,7 +53,7 @@ nav {
 .nav-container {
    position:relative;
    margin: 0 auto;
-   width:50%;
+   width:46%;
 }
 .sticky-nav .nav-container {
    width:35%;
@@ -125,14 +127,29 @@ nav {
 }
 .top-new img {
    display:inline;
+   width:110%;
+   height:auto;
    position:relative;
-   left:-240px;
-   top:-120px;
+   left:-50px;
+   top:-25px;
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
   filter: blur(5px);
+}
+@media (min-width:660px) and (max-width:986px){
+   .top-new img {
+      width:160%;
+      left:-205px;
+   }
+}
+@media(max-width:659px) {
+   .top-new img {
+      height:100%;
+      width:auto;
+      left:-495px;
+   }
 }
 .background-image-container,
 .text-overlay,
@@ -190,7 +207,7 @@ nav {
    position:relative;
 }
 .seperator {
-   height:150px;
+   height:115px;
    color:#fff;
    background:#f36b10 url('kosher-logo-white.png') no-repeat 42em -18em;
 }
@@ -209,7 +226,8 @@ nav {
    }
 }
 .new-content .main {
-   height:570px;
+   min-height:570px;
+   height:auto;
    background:#fff;
    color:#000;
    text-align:justify;
@@ -222,6 +240,7 @@ nav {
    height:385px;
    width:330px;
    margin: 10px 0px;
+   overflow:hidden;
 }
 .info-card h1 {
    margin-left:20px;

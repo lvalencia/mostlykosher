@@ -1,4 +1,15 @@
 <div class="info-card <%= defined?(color) ? color : "" %>">
-   <h1><%= title %></h1>
-   <span class="sign"><i class="fa fa-<%= sign %>"></i></span>
+   <div class="header">
+      <h1><%= title %></h1>
+      <span class="sign"><i class="fa fa-<%= sign %>"></i></span>
+   </div>
+   <div class="content">
+      <% if defined?(review) %>
+         <h4>See what people are saying about Mostly Kosher</h4>
+      <% else %>
+         <% posts.each do |post| %>
+            <abbr class="timeago" title="<%= post.posted_date.to_time.iso8601 %>">
+         <% end %>
+      <% end %>
+   </div>
 </div>
