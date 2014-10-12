@@ -5,10 +5,22 @@
    </div>
    <div class="content">
       <% if defined?(review) %>
-         <h4>See what people are saying about Mostly Kosher</h4>
+         <div class="review">
+            <h4>See what people are saying about Mostly Kosher!</h4>
+         </div>
       <% else %>
          <% posts.each do |post| %>
-            <abbr class="timeago" title="<%= post.posted_date.to_time.iso8601 %>">
+            <div class="post">
+               <div>
+                  <abbr class="timeago" title="<%= post.posted_date.to_time.iso8601 %>">
+               </div>
+               <div>
+                  <h4><%= post.title %></h4>
+               </div>
+               <div>
+                  <span><%= post.content %></h4>
+               </div>
+            </div>
          <% end %>
       <% end %>
    </div>
