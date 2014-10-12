@@ -56,7 +56,12 @@ nav {
 .sticky-nav .nav-container {
    width:35%;
 }
-@media (min-width:862px) and (max-width:1380px) {
+@media (min-width:1200px) and (max-width:1360px) {
+   .sticky-nav .nav-container {
+      width:40%;
+   }
+}
+@media (min-width:862px) and (max-width:1199px) {
    .sticky-nav .nav-container {
       width:55%;
    }
@@ -207,4 +212,31 @@ nav {
    height:570px;
    background:#fff;
    color:#000;
+   text-align:justify;
+   padding:50px;
+}
+.info-card {
+   border: 2px solid #f36b10;
+   color:#f36b10;
+   display:inline-block;
+   height:385px;
+   width:330px;
+   margin: 10px 0px;
+}
+.info-card h1 {
+   margin-left:20px;
+   display:inline-block;
+}
+.info-card span.sign {
+   font-size: 3em;
+   float: right;
+   position: relative;
+   top: 12px;
+   right: 17px;
+}
+.stretch {
+   width: 100%;
+   display: inline-block;
+   font-size: 0;
+   line-height: 0;
 }

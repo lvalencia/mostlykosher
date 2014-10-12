@@ -5,13 +5,15 @@ $(document).ready(function () {
      //Sticky Navigation
      var stickyNavTop = $('.top-nav-bar').offset().top;
      var stickyNav = function(){
-        var scrollTop = $(window).scrollTop();
-        if (scrollTop > stickyNavTop) {
-           $('.top-nav-bar').addClass('sticky-nav');
-        } 
-        else 
-        {
-           $('.top-nav-bar').removeClass('sticky-nav');
+        if ($(window).width() >= 768) {
+           var scrollTop = $(window).scrollTop();
+           if (scrollTop > stickyNavTop) {
+              $('.top-nav-bar').addClass('sticky-nav');
+           } 
+           else 
+           {
+              $('.top-nav-bar').removeClass('sticky-nav');
+           }
         }
      };
      stickyNav();
