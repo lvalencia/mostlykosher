@@ -50,6 +50,9 @@ nav {
    display:block;
    overflow:auto;
 }
+.sticky-nav .nav-container {
+   width:36.25%;
+}
 .nav-container {
    position:relative;
    margin: 0 auto;
@@ -163,7 +166,7 @@ nav {
    color:#fff;
    background:#f36b10 url(<%= asset_path 'kosher-logo-white.png' %>) no-repeat 76em -20em;
 }
-.new .seperator h1 {
+.seperator h1 {
    margin:0;
    margin-left:7.5%;
    font-family:railway;
@@ -307,11 +310,14 @@ nav {
    margin:50px 20%;
    background:rgba(255,255,255,0.8);
    position:relative;
+   display:table;
+   width:60%;
+   padding:0 1%;
 }
 .form .quote span { 
    font-size: 2em;
-   position: relative;
-   top: 28%;
+   display:table-cell;
+   vertical-align:middle;
 }
 .form-field {
   margin:0 20%;
@@ -330,6 +336,47 @@ nav {
 .form .quote span.rightsideup {
    right:-5px;
    top:14px;
+}
+.music .header {
+   position:relative;
+}
+.music .video {
+   height:575px;
+   padding:5.8% 0;
+   background:#fff;
+   color:#111;
+}
+.music .video .wrapper {
+   width:560px;
+   display:inline-block;
+}
+.music h4 {
+   color:#111;
+}
+.music .media-info {
+   display:inline-block;
+   width:330px;
+}
+.center-wrap {
+   width:80%;
+   margin:0 20%;
+}
+.center-wrap > div {
+   margin:0 20px;
+}
+.video .media-info {
+   overflow:hidden;
+   vertical-align:top;
+}
+.video .media-info h4,
+.video .media-info{
+   font-size:1.25em;
+   margin-top:0;
+}
+.video .media-info ul {
+   margin-left:0;
+   padding-left:0;
+   list-style:none;
 }
 /* Media Query Overrides */
 @media(min-width:1770px){
@@ -415,7 +462,7 @@ nav {
    }
 }
 @media(max-width:992px) {
-   .new .seperator h1 {
+   .seperator h1 {
       font-size:6em;
    }
 }
