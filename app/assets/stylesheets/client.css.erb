@@ -337,6 +337,7 @@ nav {
    right:-5px;
    top:14px;
 }
+/* Music Section */
 .music .header {
    position:relative;
 }
@@ -398,6 +399,71 @@ nav {
 }
 .video .media-info ul li a i {
   font-size:3em;
+}
+/* Album Section */
+.album {
+   height:720px;
+   position:relative;
+   overflow:hidden;
+   padding-top:150px;
+}
+.album .content {
+   position:absolute;
+   z-index:10;
+   width:100%;
+   text-align:center;
+   display:table;
+   padding: 0 10%;
+}
+.album .content > div {
+   position:relative;
+  display: table-cell;
+  vertical-align: bottom;
+}
+.album .content .text {
+   color:#fff;
+   width:360px;
+   text-align:right;
+}
+.album .content .text span {
+   display:inline-block;
+   margin-top:50px;
+}
+.album .buy {
+    width:15%;
+}
+.album .buy a {
+   padding-top:20%;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   background-color:#e7b009;
+   color:#fff;
+   display:inline-block;
+   height:80px;
+   width:100%;
+   padding-top: 8%;
+   text-align: center;
+   font-size: 2em;
+}
+.album .background,
+.album .background img {
+   position:absolute;
+   width:100%;
+   height:auto;
+}
+.album .background img {
+   display:inline;
+   display: inline;
+   width: 110%;
+   height: auto;
+   left: -60px;
+   top: -330px;
+  -webkit-filter: blur(15px);
+  -moz-filter: blur(15px);
+  -o-filter: blur(15px);
+  -ms-filter: blur(15px);
+  filter: blur(15px);
 }
 /* Media Query Overrides */
 @media(min-width:1770px){
