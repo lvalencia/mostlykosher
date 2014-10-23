@@ -1,0 +1,30 @@
+<div class="row gallery">
+   <div class="header">
+      <%= render partial: 'seperator', :locals => { color:"#9b200c", text:"GALLERY" } %>
+   </div>
+   <div class="content">
+      <div class="container gallery-wrapper">
+         <div id="gallery-preview" class="owl-carousel">
+            <% (1..3).each do |x| %>
+            <div class="slide"> 
+               <div class="slide-image">
+                   <img src="<%= image_path "gallery-preview-"+x.to_s+".png" %>">
+               </div>
+            </div>
+            <% end %> 
+            <%# Remove Eventually and instead add more preview photos %>
+            <% (1..3).each do |x| %>
+            <div class="slide"> 
+               <div class="slide-image">
+                   <img src="<%= image_path "gallery-preview-"+x.to_s+".png" %>">
+               </div>
+            </div>
+            <% end %>
+         </div>
+         <div class="more-pictures">
+            <p>Click to see more picture from our <a href="/">Gallery!</a></p>
+            <p><a href="/">or check out our Instagram >> <i class="fa fa-instagram"></i></a></p>
+         </div>
+      </div>
+   </div>
+</div>
