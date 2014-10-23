@@ -1,0 +1,15 @@
+<div class="row about">
+   <h3>ABOUT MOSTLY KOSHER</h3>
+   <img src="<%= image_path 'band-image-about.png' %>">
+   <div class="bio">
+      <%= render partial: "bio", :locals => { name:"Mostly-Kosher", bio:"This is the motherfucking band bio, that's what I'm talking about, mostly kosher going BLUE, like Chelsea Handler blue." } %>
+      <%= render partial: "bio", :locals => { name:"Casey", bio:"Casey Bio" } %>
+      <%= render partial: "bio", :locals => { name:"Will", bio:"Will Bio", hidden:true } %>
+      <%= render partial: "bio", :locals => { name:"Eric", bio:"Eric Bio", hidden:true } %>
+      <%= render partial: "bio", :locals => { name:"Leeav Sofer", bio:"Leeav Bio", hidden:true } %>
+      <%= render partial: "bio", :locals => { name:"Janice", bio:"Janice Bio", hidden:true } %>
+      <%= render partial: "bio", :locals => { name:"Mike B", bio:"Mike B Bio", hidden:true } %>
+      <%= render partial: "bio", :locals => { name:"Adam", bio:"Adam Bio", hidden:true } %>
+      <%= render partial: "bio", :locals => { name:"Mike K", bio:"Mike K Bio", hidden:true } %>
+   </div>
+</div>
