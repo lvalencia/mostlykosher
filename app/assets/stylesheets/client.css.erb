@@ -580,6 +580,96 @@ nav {
 .gallery .content .more-pictures p a { 
    color:#9b200c;
 }
+/* Shop Section */
+.shop {
+   min-height:720px;
+   background: #e6e6e6 url(<%= image_path 'shop-background.png' %>) no-repeat right center;
+   position:relative;
+}
+.shop .yellow-band {
+   background-color:#e7b009;
+   height:100%;
+   width:320px;
+   position: absolute;
+   z-index:10;
+   opacity:0.6;
+}
+.shop .yellow-band,
+.shop .stacked-shirts {
+   top:0;
+}
+.shop .yellow-band.right {
+   right:5%;
+}
+.shop .yellow-band.left {
+   left:-10%;
+}
+.shop .tshirt {
+   position: absolute;
+   background: transparent url(<%= image_path 'kosher-tshirt.png' %>) no-repeat center center;
+   width:520px;
+   height:100%;
+   z-index:15;
+   right:4%;
+}
+.shop .info {
+   max-width:375px;
+   margin:0 auto;
+   margin-top:150px;
+   position:absolute;
+   left:50%;
+   z-index:20;
+}
+.shop .info .inner-wrap {
+   position: relative; 
+   left: -50%;
+}
+.shop .info h3,
+.shop .info a {
+   color:#e7b009;
+   font-size:4em;
+}
+.shop .info p {
+   font-size:3.5em;
+   font-weight: lighter;
+}
+.shop .info a {
+   font-size:1em;
+   font-weight:normal;
+}
+.shop .stacked-shirts {
+   position:absolute;
+   left:0;
+   z-index:8;
+   height:100%;
+   width:680px;
+   background: transparent url(<%= image_path 'stacked-shirts.png' %>) no-repeat left center;
+   background-size:cover;
+   -webkit-filter: grayscale(100%);
+   -moz-filter: grayscale(100%);
+   filter: grayscale(100%);
+}
+/* footer section */
+footer .top {
+   min-height:120px;
+   background:#f36b10;
+   padding-top:15px;
+}
+footer .top p,
+footer .bottom p {
+   color:#fff;
+   max-width:400px;
+   margin:0 auto;
+   text-align:center;
+   font-size:1.5em;
+}
+footer .bottom p {
+   padding-top:12px;
+}
+footer .bottom {
+  min-height: 60px;
+  background:#111;
+}
 /* Media Query Overrides */
 @media(min-width:1770px){
    .container {
