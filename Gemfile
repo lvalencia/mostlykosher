@@ -28,6 +28,8 @@ group :development do
    gem 'spring'
    gem 'thin'
 end
+
+gem 'rails_autolink'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

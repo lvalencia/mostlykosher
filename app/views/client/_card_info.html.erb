@@ -7,6 +7,11 @@
       <% if defined?(review) %>
          <div class="review">
             <h4>See what people are saying about Mostly Kosher!</h4>
+            <% review.each do |post| %>
+            <br />
+            <quote><%= post.quote.html_safe %></quote><br/ >
+            <span>-<%= post.entity %></span>
+            <% end %>
          </div>
       <% else %>
          <% posts.each do |post| %>
@@ -18,7 +23,7 @@
                   <h4><%= post.title %></h4>
                </div>
                <div>
-                  <span><%= post.content %></h4>
+                  <span><%= auto_link(post.content.html_safe) %></h4>
                </div>
             </div>
          <% end %>
