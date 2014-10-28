@@ -21,7 +21,7 @@ body {
 /* Nav Bar */
 .sticky-nav {
    position: fixed;
-   width: 110%;
+   width: 100%;
    top: 0;
    z-index: 30;
    border-top: 0;
@@ -47,16 +47,12 @@ body {
    font-size:1.15em;
 }
 nav {
-   display:block;
+   display:inline-block;
    overflow:auto;
-}
-.sticky-nav .nav-container {
-   width:36.25%;
 }
 .nav-container {
    position:relative;
-   margin: 0 auto;
-   width:34%;
+   margin:0 auto;
 }
 .nav li,
 .social-media li{
@@ -664,12 +660,12 @@ nav {
    filter: grayscale(100%);
 }
 /* footer section */
-footer .top {
+footer .top-footer {
    min-height:120px;
    background:#f36b10;
    padding-top:15px;
 }
-footer .top p,
+footer .top-footer p,
 footer .bottom p {
    color:#fff;
    max-width:400px;
@@ -685,88 +681,6 @@ footer .bottom {
   background:#111;
 }
 /* Media Query Overrides */
-@media(min-width:1770px){
-   .container {
-      width:1770px;
-   }
-}
-@media (min-width:1460px) and (max-width:1769px) {
-   .container {
-      width:1460px;
-   }
-   .left-center {
-      left:34.5%;
-   }
-}
-@media (min-width:1200px) and (max-width:1459px) {
-   .container {
-      width:1200px;
-   }
-   .left-center {
-      left:30%;
-   }
-}
-@media (min-width:1460px) and (max-width:1769px) {
-  .nav-container {
-     width:36%;
-  }
-  .sticky-nav .nav-container {
-     width:40%;
-  }
-}
-@media (min-width:1200px) and (max-width:1460px) {
-   .nav-container {
-      width:46%;
-   }
-}
-@media (min-width:1200px) and (max-width:1360px) {
-   .sticky-nav .nav-container {
-      width:42%;
-   }
-}
-@media (min-width:862px) and (max-width:1199px) {
-   .sticky-nav .nav-container {
-      width:55%;
-   }
-   .left-center {
-      left:26%;
-   }
-}
-@media (min-width:762px) and (max-width:861px) {
-   .sticky-nav .nav-container {
-      width:62%;
-   }
-}
-@media (min-width:992px) and (max-width:1199px) {
-   .nav-container {
-      width:55%;
-   }
-}
-@media (max-width:991px) {
-   .nav-container {
-      width:70%;
-   }
-}
-@media (min-width:660px) and (max-width:986px){
-   .top-new img {
-      width:160%;
-      left:-205px;
-   }
-}
-@media(max-width:659px) {
-   .top-new img {
-      height:100%;
-      width:auto;
-      left:-495px;
-   }
-}
-@media(max-width:992px) {
-   .left-center {
-      float:none;
-      position:initial;
-      text-align:center;
-   }
-}
 @media(max-width:992px) {
    .seperator h1 {
       font-size:6em;
