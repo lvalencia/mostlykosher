@@ -68,6 +68,9 @@ nav {
     padding:10px;
 }
 /* Word to Bubbe */
+.top-new {
+   background-color:#000;
+}
 .top-new, .faded-background {
    width:100%;
    height:1000px;
@@ -105,22 +108,33 @@ nav {
    width:110%;
    height:auto;
    position:relative;
-   left:-50px;
-   top:-25px;
+   left:0;
+   top:40px;
+/* Blur if it Needs to Come back
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
   filter: blur(5px);
+*/
 }
-.background-image-container,
-.text-overlay,
+.text-overlay-outer,
 .news-media {
+   position:absolute;
+   left:50%;
+}
+.text-overlay-inner,
+.news-media-inner {
+   position:relative;
+   left:-50%;
+   text-align:center;
+}
+.background-image-container {
    position:absolute;
    text-align:center;
    width:100%;
 }
-.text-overlay,
+.text-overlay-outer,
 .news-media {
    z-index:10;
 }
