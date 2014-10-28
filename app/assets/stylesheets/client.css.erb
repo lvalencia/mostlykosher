@@ -285,7 +285,7 @@ nav {
 /* Newsletter Sign up */
 .form { 
    height:720px;
-   background: #faf4f2 url(<%= asset_path 'hebrew-form.png' %>) no-repeat 0px -380px;
+   background: #faf4f2 url(<%= asset_path 'hebrew-form.png' %>) no-repeat 0px 0px;
    background-size:cover;
 }
 .form form {
@@ -436,6 +436,9 @@ nav {
    text-align:center;
    display:table;
    padding: 0 10%;
+}
+.album .content .cover img {
+   height:350px;
 }
 .album .content > div {
    position:relative;
