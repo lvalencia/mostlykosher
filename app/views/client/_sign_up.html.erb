@@ -1,10 +1,12 @@
 <div class="row form">
    <div class="form-field">
-      <form>
-         <span>Don't be a shmendrick!</span>
-         <span>Sign up for our Newsletter!</span>
+      <form id="newsletter" action="/fan/newsletter" method="POST">
+         <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+         <span class="shoutout">Don't be a shmendrick!</span>
+         <span class="shoutout">Sign up for our Newsletter!</span>
          <div class="input-fields">
            <input type="text" name="email" >
+           <span id="thankyou" style="display:none;">Welcome to the Family! Chicken soup is on it's way!</span>
            <button type="submit">Sign Up!</button>
          </div>
       </form>

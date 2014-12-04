@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141012205607) do
+ActiveRecord::Schema.define(version: 20141204071800) do
+
+  create_table "fans", force: true do |t|
+    t.string   "email"
+    t.string   "address"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "phone"
+    t.string   "organization"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "posts", force: true do |t|
     t.string   "feed"
