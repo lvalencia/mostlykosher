@@ -30,15 +30,22 @@ $(document).on("submit", "form#newsletter", function (e) {
       }
    });
 });
-//Smooth Scroll To
-$(document).on("click", "nav ul li a[href^='#']", function (e) {
-   header_offset = 40;
-   delay = 1200;
+$(document).on("click", "a.scrollto", function(e){
    e.preventDefault();
-   var hash = this.hash;
-   $('html, body').animate({
-      scrollTop: $(this.hash).offset().top-header_offset
-   }, delay, function(){
-      window.location.hash = hash;
-   });
+   var t = $($(this).attr("href"));
+   $("html, body").animate({
+      scrollTop:t.offset().top-53
+   }, 1e3)
 });
+//Smooth Scroll To
+//$(document).on("click", "nav ul li a[href^='#']", function (e) {
+//   header_offset = 40;
+//   delay = 1200;
+//   e.preventDefault();
+//   var hash = this.hash;
+//   $('html, body').animate({
+//      scrollTop: $(this.hash).offset().top-header_offset
+//   }, delay, function(){
+//      window.location.hash = hash;
+//   });
+//});
