@@ -1,3 +1,4 @@
+//On Load Bindings
 $(document).ready(function () {
    $("abbr.timeago").timeago();
    $('#map_canvas').gmap();
@@ -7,6 +8,7 @@ $(document).ready(function () {
       items: 3,
   });
 });
+//Form Submission Override
 $(document).on("submit", "form#newsletter", function (e) {
    e.preventDefault();
    target = "form#newsletter";
@@ -26,5 +28,17 @@ $(document).on("submit", "form#newsletter", function (e) {
       },
       error:function (error) {
       }
+   });
+});
+//Smooth Scroll To
+$(document).on("click", "nav ul li a[href^='#']", function (e) {
+   header_offset = 40;
+   delay = 1200;
+   e.preventDefault();
+   var hash = this.hash;
+   $('html, body').animate({
+      scrollTop: $(this.hash).offset().top-header_offset
+   }, delay, function(){
+      window.location.hash = hash;
    });
 });
