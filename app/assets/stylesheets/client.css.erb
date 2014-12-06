@@ -202,6 +202,7 @@ nav {
    display:inline-block;
    height:415px;
    max-width:330px;
+   width:100%;
    margin: 10px 0px;
    overflow:hidden;
    padding:20px;
@@ -256,10 +257,11 @@ nav {
 .info-card .post {
    text-align:justify;
 }
-.info-card .post span {
+.info-card .post p {
    color:#111;
+   word-wrap: break-word;
 }
-.info-card .post span a {
+.info-card .post p a {
    color:#f36b10;
 }
 .info-card .footer,
@@ -509,6 +511,22 @@ nav {
   -o-filter: blur(15px);
   -ms-filter: blur(15px);
   filter: blur(15px);
+}
+@media screen and (min-width:681px) and (max-width:1320px){
+   .album .background {
+      width:150%;
+   }
+   .album .background img {
+      top: -170px;
+   }
+}
+@media screen and (max-width:680px){
+   .album .background {
+      width:255%;
+   }
+   .album .background img {
+      top: -170px;
+   }
 }
 /* Show Section */ 
 .shows .header {
