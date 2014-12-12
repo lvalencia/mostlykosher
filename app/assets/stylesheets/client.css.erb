@@ -102,12 +102,15 @@ nav {
   background-color:rgba(150, 60, 20, 0.2);
 }
 .top-new img {
-   display:inline;
+   display: inline;
    width:100%;
    height:auto;
-   position:relative;
-   left:0;
-   top:40px;
+   position: absolute;
+   left: 0;
+   right: 0;
+   margin-left: auto;
+   margin-right: auto;
+   bottom: -240px;
 /* Blur if it Needs to Come back
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
@@ -115,6 +118,11 @@ nav {
   -ms-filter: blur(5px);
   filter: blur(5px);
 */
+}
+@media screen and (max-width:1460px){
+    .top-new img {
+       bottom:0;
+    }
 }
 .text-overlay-outer,
 .news-media {
@@ -128,9 +136,10 @@ nav {
    text-align:center;
 }
 .background-image-container {
-   position:absolute;
-   text-align:center;
-   width:100%;
+   position: relative;
+   text-align: center;
+   width: 100%;
+   height: 100%;
 }
 .text-overlay-outer,
 .news-media {
@@ -446,52 +455,45 @@ nav {
 }
 /* Album Section */
 .album {
-   height:720px;
+   min-height:720px;
    position:relative;
    overflow:hidden;
    padding-top:150px;
 }
-.album .content {
-   position:absolute;
-   z-index:10;
-   width:100%;
-   text-align:center;
-   display:table;
-   padding: 0 10%;
-}
-.album .content .cover img {
-   height:350px;
-}
-.album .content > div {
+.album .container {
    position:relative;
-  display: table-cell;
-  vertical-align: bottom;
+   margin:0 auto;
 }
-.album .content .text {
+.album .container > div {
+   display:inline-block;
+   margin-left:10%;
+}
+.album .cover img {
+   height:420px;
+   vertical-align:initial;
+}
+.album .text {
    color:#fff;
    width:360px;
    text-align:right;
+   vertical-align:top;
 }
-.album .content .text span {
+.album .text h1 {
+   margin-top:0;
+}
+.album .text span {
    display:inline-block;
    margin-top:50px;
 }
-.album .buy {
-    width:15%;
-}
 .album .buy a {
-   padding-top:20%;
-   -webkit-border-radius: 5px;
-   -moz-border-radius: 5px;
-   border-radius: 5px;
-   background-color:#e7b009;
-   color:#fff;
-   display:inline-block;
-   height:80px;
-   width:100%;
-   padding-top: 8%;
-   text-align: center;
+   background-color: #e7b009;
+   color: #fff;
+   margin: 60px 0;
+   height: 80px;
+   max-width: 250px;
+   width: 50%;
    font-size: 2em;
+   padding-top: 5%;
 }
 .album .background,
 .album .background img {
@@ -511,6 +513,13 @@ nav {
   -o-filter: blur(15px);
   -ms-filter: blur(15px);
   filter: blur(15px);
+}
+@media screen and (max-width:1200px) {
+   .album .container > div {
+      display:inline-block;
+      margin:0 auto;
+      text-align:left;
+   }
 }
 @media screen and (min-width:681px) and (max-width:1320px){
    .album .background {
