@@ -18,6 +18,7 @@
 # end
 
 # Learn more: http://github.com/javan/whenever
-every "0 * * * *" do
+#Every Hour
+every 1.hour do
    rake sync_social_media
 end
