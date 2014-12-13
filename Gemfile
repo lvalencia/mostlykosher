@@ -35,6 +35,12 @@ gem "koala", "~> 1.10.0rc" #Facebook
 gem "instagram"
 gem "twitter"
 
+#Crons
+gem "whenever"
+
+#Image Processing
+gem "paperclip", "~> 4.2"
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

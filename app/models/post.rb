@@ -1,4 +1,12 @@
 class Post < ActiveRecord::Base
+   has_attached_file :image, :styles => { info_card: "330", gallery_preview:"320x214#" }, url: "/uploads/:class/:style_:filename"
+   validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png", "image/gif"]
+
+   validates :feed, :posted_date, :title, :content, presence: true
+   validate do |post|
+      post.unique_content
+   end
+
    def self.latest_facebook_posts
       Post.where({ feed: "facebook" }).order("posted_date desc").limit(1)
    end
@@ -27,5 +35,9 @@ class Post < ActiveRecord::Base
             datetime: tweet.created_at
          }
       end 
+   end
+
+   def unique_content
+      errors.add(:base, "Has Already Been Posted") if Post.exists?({ content:self.content })
    end
 end
