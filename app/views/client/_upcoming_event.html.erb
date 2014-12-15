@@ -1,12 +1,12 @@
 <div class="upcoming-event">
     <div class="header">
-       <h1><%= date %></h1>
-       <h3><%= title %></h3>
+       <h1><%= event.date %></h1>
+       <h3><%= event.title %></h3>
     </div>
     <div class="content">
-        <span><%= description %></span>
+        <span><%= auto_link(event.description.html_safe) %></span>
     </div>
     <div class="footer">
-       <a href="<%= link %>">BUY TICKETS</a>
+       <a href="<%= event.link %>">BUY TICKETS</a>
     </div>
 </div>

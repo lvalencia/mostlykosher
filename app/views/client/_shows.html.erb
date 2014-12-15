@@ -16,7 +16,7 @@
                <div id="map_canvas"></div>
             </div>
             <div class="col-xs-6">
-               <%= render partial: 'upcoming_event', :locals => { date:"Nov 1, 2014", title:"Album Release Party", description:"this is a description of the event", link: "/"} %>
+               <%= render partial: 'upcoming_event', :locals => { event: @next_event } %>
             </div>
          </div> 
          <div class="row">
