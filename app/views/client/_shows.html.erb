@@ -6,15 +6,17 @@
       <div class="gig-info">
          <div class="row">
             <div class="col-xs-6">
+            </div>
+            <div class="col-xs-6">
                <h3>UPCOMING EVENTS</h3>
             </div>
          </div>
          <div class="row">
             <div class="col-xs-6">
-               <%= render partial: 'upcoming_event', :locals => { date:"Nov 1, 2014", title:"Album Release Party", description:"this is a description of the event", link: "/"} %>
+               <div id="map_canvas"></div>
             </div>
             <div class="col-xs-6">
-               <div id="map_canvas"></div>
+               <%= render partial: 'upcoming_event', :locals => { date:"Nov 1, 2014", title:"Album Release Party", description:"this is a description of the event", link: "/"} %>
             </div>
          </div> 
          <div class="row">
