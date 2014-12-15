@@ -1,6 +1,6 @@
 <div class="upcoming-event">
     <div class="header">
-       <h1><%= event.date %></h1>
+       <h1><%= event.date.strftime("%b %d, %Y")%></h1>
        <h3><%= event.title %></h3>
     </div>
     <div class="content">
