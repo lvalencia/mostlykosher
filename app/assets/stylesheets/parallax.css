@@ -29,3 +29,6 @@
 *[data-parallax=wrapper]{
    position:relative;
 }
+*[data-parallax=base] {
+   margin-bottom:792px;
+}
