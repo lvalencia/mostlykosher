@@ -1,4 +1,5 @@
 <div class="row about" id="about" data-parallax="back">
+   <div data-parallax="wrapper">
    <h3>ABOUT MOSTLY KOSHER</h3>
    <img src="<%= image_path 'band-image-about.png' %>">
    <div class="bio">
@@ -11,5 +12,6 @@
       <%= render partial: "bio", :locals => { name:"Mike B", bio:"Mike B Bio", hidden:true } %>
       <%= render partial: "bio", :locals => { name:"Adam", bio:"Adam Bio", hidden:true } %>
       <%= render partial: "bio", :locals => { name:"Mike K", bio:"Mike K Bio", hidden:true } %>
+   </div>
    </div>
 </div>

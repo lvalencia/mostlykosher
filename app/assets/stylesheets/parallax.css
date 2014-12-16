@@ -22,6 +22,10 @@
 .parallax__layer--back {
   transform: translateZ(-1px) scale(2);
 }
-#new, #music, #shows, #gallery {
-   margin-bottom:720px;
+*[data-parallax=back] {
+   position:relative;
+   display:block;
+}
+*[data-parallax=wrapper]{
+   position:relative;
 }
