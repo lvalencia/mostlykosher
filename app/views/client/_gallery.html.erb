@@ -5,14 +5,14 @@
    <div class="content">
       <div class="container gallery-wrapper">
          <div id="gallery-preview" class="owl-carousel">
-            <% (1..3).each do |x| %>
-            <div class="slide"> 
-               <div class="slide-image">
-                   <img src="<%= image_path "gallery-preview-"+x.to_s+".png" %>">
+            <% @instagram_images.each do |image| %>
+               <div class="slide"> 
+                  <div class="slide-image">
+                      <img src="<%= image %>">
+                  </div>
                </div>
-            </div>
-            <% end %> 
-            <%# Remove Eventually and instead add more preview photos %>
+            <% end %>
+            <%# Default Images %>
             <% (1..3).each do |x| %>
             <div class="slide"> 
                <div class="slide-image">

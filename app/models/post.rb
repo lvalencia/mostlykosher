@@ -16,7 +16,11 @@ class Post < ActiveRecord::Base
    end
 
    def self.latest_twitter_posts
-      Post.where({ feed:"twitter"}).order("posted_date desc").limit(2)
+      Post.where({ feed:"twitter" }).order("posted_date desc").limit(2)
+   end
+ 
+   def self.latest_instagram_posts
+      Post.where({ feed:"instagram" }).order("posted_date desc").limit(2)
    end
 
    def self.pull_down_posts_from_facebook
