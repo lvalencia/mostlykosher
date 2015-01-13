@@ -1,23 +1,13 @@
 <div class="container-fluid">
-   <%# render partial: 'nav_bar' %>
-   <div class="parallax row">
-      <div class="parallax__group">
-         <div class="parallax__layer parallax__layer--back">
-            <%= render partial: 'top_new'%>
-            <%= render partial: 'sign_up' %>
-            <%= render partial: 'album' %>
-            <%= render partial: 'about' %>
-            <%= render partial: 'shop' %>
-         </div>
-      </div>
-      <div class="parallax__group">
-         <div class="parallax__layer parallax__layer--base">
-            <%= render partial: 'new' %>
-            <%= render partial: 'music' %>
-            <%= render partial: 'shows' %>
-            <%= render partial: 'gallery' %>
-         </div>
-      </div>
-   </div>
-   <%# render partial: 'footer' %>
+   <%= render partial: 'nav_bar' %>
+   <%= render partial: 'top_new'%>
+   <%= render partial: 'new' %>
+   <%= render partial: 'sign_up' %>
+   <%= render partial: 'music' %>
+   <%= render partial: 'album' %>
+   <%= render partial: 'shows' %>
+   <%= render partial: 'about' %>
+   <%= render partial: 'gallery' %>
+   <%= render partial: 'shop' %>
+   <%= render partial: 'footer' %>
 </div>

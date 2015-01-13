@@ -18,6 +18,17 @@ body {
 .kosher {
    font-family:kosher;
 }
+.container-fluid {
+   padding:0;
+}
+[data-type=background] {
+   width: 100%;
+   background-position: 50% 0;
+   background-repeat: no-repeat !important;
+   background-attachment: fixed !important;
+   background-size: cover !important;
+   position: relative;
+}
 /* Nav Bar */
 .sticky-nav {
    position: fixed;
@@ -66,8 +77,8 @@ nav {
     padding:10px;
 }
 /* Word to Bubbe */
-.top-new {
-   background-color:#000;
+#top {
+   background-image:url(<%= image_path 'band-image-home.png' %>);
 }
 .top-new, .faded-background {
    width:100%;
@@ -296,10 +307,11 @@ nav {
    color:#f36b10;
 }
 /* Newsletter Sign up */
+#form {
+   background: url(<%= asset_path 'hebrew-form.png' %>);
+}
 .form { 
    height:720px;
-   background: #faf4f2 url(<%= asset_path 'hebrew-form.png' %>) no-repeat 0px 0px;
-   background-size:cover;
 }
 .form form {
    padding-top:185px;
@@ -454,6 +466,9 @@ nav {
   font-size:3em;
 }
 /* Album Section */
+#album {
+   background:url(<%= image_path 'band-image-album-section.png' %>);
+}
 .album {
    min-height:720px;
    position:relative;
@@ -601,8 +616,11 @@ nav {
   font-size:2em;
 }
 /* About Section */
+#about {
+   background:#000 url(<%= image_path 'band-image-about.png' %>) 50% 50%;
+   background-size: 1890px auto !important;
+}
 .about {
-   background-color:#000;
    min-height:720px;
 }
 .about img {
@@ -661,9 +679,11 @@ nav {
    color:#9b200c;
 }
 /* Shop Section */
+#shop {
+   background:url(<%= image_path 'shop-background.png' %>);
+}
 .shop {
    min-height:720px;
-   background: #e6e6e6 url(<%= image_path 'shop-background.png' %>) no-repeat right center;
    position:relative;
 }
 .shop .yellow-band {
