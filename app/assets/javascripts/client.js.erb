@@ -1,5 +1,5 @@
 //On Load Bindings
-$(document).ready(function () {
+ready  = function () {
    $("abbr.timeago").timeago();
    $('#map_canvas').gmap();
    $("#gallery-preview").owlCarousel({
@@ -15,7 +15,8 @@ $(document).ready(function () {
          $("#map_canvas").gmap('option', 'zoom', 15);
       }
    });
-});
+}
+
 //Form Submission Override
 $(document).on("submit", "form#newsletter", function (e) {
    e.preventDefault();
@@ -47,3 +48,6 @@ $(document).on("click", "nav ul li a[href^='#']", function(e){
       scrollTop:target.offset().top-header_offset
    }, delay);
 });
+
+$(document).ready(ready);
+$(document).on('page:load', ready);
