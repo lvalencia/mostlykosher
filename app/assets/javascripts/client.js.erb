@@ -9,7 +9,7 @@ $(document).ready(function () {
    }
 
    if (iOS) {
-      $('[data-type="background"]').css('background-size', 'initial !important');
+$('[data-type="background"]').attr('style', 'background-size: initial !important;');
    }
 
    $("abbr.timeago").timeago();
