@@ -1,19 +1,31 @@
 //On Load Bindings
 $(document).ready(function () {
-    $("abbr.timeago").timeago();
-    $('#map_canvas').gmap();
-    $("#gallery-preview").owlCarousel({
-       autoPlay: 3000, //Set AutoPlay to 3 seconds
-       autoHeight: true,
-       items: 3,
+   //iOS Check 
+   var iOS = false,
+     p = navigator.platform;
+   
+   if (p === 'iPad' || p === 'iPhone' || p === 'iPod') {
+     iOS = true;
+   }
+
+   if (iOS) {
+      $('[data-type="background"]').css('background-size', 'initial !important');
+   }
+
+   $("abbr.timeago").timeago();
+   $('#map_canvas').gmap();
+   $("#gallery-preview").owlCarousel({
+      autoPlay: 3000, //Set AutoPlay to 3 seconds
+      autoHeight: true,
+      items: 3,
    });
-   $('#map_canvas').gmap('search', { 'address': '<%= Event.next.location %>' }, function(data, response_status){
-       if (response_status == "OK"){
-          lat_long = data[0].geometry.location;
-          $('#map_canvas').gmap('addMarker', { position:lat_long });
-          $('#map_canvas').gmap('get', 'map').panTo(lat_long);
-          $("#map_canvas").gmap('option', 'zoom', 15);
-       }
+   $('#map_canvas').gmap('search', { 'address': '<%= Event.next.nil? ? "Los Angeles, CA" : Event.next.location %>' }, function(data, response_status){
+      if (response_status == "OK"){
+         lat_long = data[0].geometry.location;
+         $('#map_canvas').gmap('addMarker', { position:lat_long });
+         $('#map_canvas').gmap('get', 'map').panTo(lat_long);
+         $("#map_canvas").gmap('option', 'zoom', 15);
+      }
    });
 });
 //Form Submission Override
