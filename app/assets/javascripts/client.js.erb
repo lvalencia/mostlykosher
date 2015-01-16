@@ -1,18 +1,5 @@
 //On Load Bindings
 $(document).ready(function () {
-debugger;
-   //iOS Check 
-   var iOS = false,
-     p = navigator.platform;
-   
-   if (p === 'iPad' || p === 'iPhone' || p === 'iPod') {
-     iOS = true;
-   }
-
-   if (iOS) {
-$('[data-type="background"]').attr('style', 'background-size: initial !important;');
-   }
-
    $("abbr.timeago").timeago();
    $('#map_canvas').gmap();
    $("#gallery-preview").owlCarousel({

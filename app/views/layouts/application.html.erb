@@ -14,5 +14,14 @@
 
 <%= yield %>
 
+<% if @is_ios %>
+<style>
+   [data-type=background] {
+      background-attachment:initial !important;
+      background-size: auto 100% !important;
+   }
+</style>
+<% end %>
+
 </body>
 </html>
