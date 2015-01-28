@@ -10,6 +10,9 @@ class ClientController < ApplicationController
       @is_ios = request_is_ios
    end
 
+   def shop
+   end
+
 private
 
    def request_is_ios
