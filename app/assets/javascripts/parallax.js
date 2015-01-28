@@ -59,3 +59,4 @@ ready = function () {
 
 $(window).on('resize', ready);
 $(document).ready(ready);
+$(document).on('page:load', ready);
