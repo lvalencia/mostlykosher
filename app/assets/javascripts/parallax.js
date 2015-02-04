@@ -43,6 +43,7 @@ ready = function () {
 
       if (mobileCheck || iOS) {
         $self.css('background-attachment', 'scroll !important');
+        $('[data-parallax="back"]').css('height', $(window).height()/2); 
         return true;
       }
 
