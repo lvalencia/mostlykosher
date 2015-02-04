@@ -43,7 +43,16 @@ ready = function () {
 
       if (mobileCheck || iOS) {
         $self.css('background-attachment', 'scroll !important');
-        $('[data-parallax="back"]').css('height', $(window).height()/2); 
+        switch(window.orientation) 
+        {  
+          case -90:
+          case 90:
+            //Do nothign for now
+            break; 
+          default:
+             $('[data-parallax="back"]').css('height', $(window).height()/2); 
+            break; 
+        }
         return true;
       }
 
