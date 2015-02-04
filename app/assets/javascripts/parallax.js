@@ -59,5 +59,6 @@ ready = function () {
 }
 
 $(window).on('resize', ready);
+window.addEventListener('orientationchange', ready);
 $(document).ready(ready);
 $(document).on('page:load', ready);
