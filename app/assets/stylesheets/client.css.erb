@@ -80,6 +80,7 @@ nav {
 /* Word to Bubbe */
 #top {
    background-image:url(<%= image_path 'band-image-home.png' %>);
+   overflow-y:hidden;
 }
 .top-new, .faded-background {
    width:100%;
@@ -782,6 +783,9 @@ footer .bottom {
   background:#111;
 }
 /* Media Query Overrides */
+div.cover.small-cover {
+   display:none;
+}
 @media(max-width:992px) {
    .seperator h1 {
       font-size:6em;
@@ -791,4 +795,17 @@ footer .bottom {
   .new-content .main {
       text-align:center;
    }
+  div.buy.text .big-text,
+  div.cover.big-cover {
+     display:none;
+  }
+  div.cover.small-cover {
+     display:block;
+     width:24em;
+     height:auto;
+     margin:0 -3.4em;
+  }
+  div.album {
+     padding-top: 100px;
+  }
 }
