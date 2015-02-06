@@ -48,7 +48,7 @@ ready = function () {
           case -90:
           case 90:
             //Do nothign for now
-             $('[data-parallax="back"]').css('height', '675px');
+             $('[data-parallax="back"]').css('height', '690px');
             break; 
           default:
              $('[data-parallax="back"]').css('height', $(window).height()/2); 
