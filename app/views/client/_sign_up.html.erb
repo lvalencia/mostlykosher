@@ -1,21 +1,23 @@
 <div class="form" id="form" data-parallax="back" data-type="background">
    <div data-parallax="wrapper">
-   <div class="form-field">
-      <form id="newsletter" action="/fan/newsletter" method="POST">
-         <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
-         <span class="shoutout">Don't be a shmendrick!</span>
-         <span class="shoutout">Sign up for our Newsletter!</span>
-         <div class="input-fields">
-           <input type="text" name="email" >
-           <span id="thankyou" style="display:none;">Welcome to the Family! Chicken soup is on it's way!</span>
-           <button type="submit">Sign Up!</button>
+      <div class="form-content">
+         <div class="form-field">
+            <form id="newsletter" action="/fan/newsletter" method="POST">
+               <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+               <span class="shoutout">Don't be a shmendrick!</span>
+               <span class="shoutout">Sign up for our Newsletter!</span>
+               <div class="input-fields">
+                 <input type="text" name="email" >
+                 <span id="thankyou" style="display:none;">Welcome to the Family! Chicken soup is on it's way!</span>
+                 <button type="submit">Sign Up!</button>
+               </div>
+            </form>
          </div>
-      </form>
-   </div>
-   <div class="quote">
-      <span class="upsidedown quotation-mark">&ldquo;</span>
-      <span>May you grow like an onion with you head on the ground!</span>
-      <span class="rightsideup quotation-mark">&rdquo;</span>
-   </div>
+         <div class="quote">
+            <span class="upsidedown quotation-mark">&ldquo;</span>
+            <span>May you grow like an onion with you head on the ground!</span>
+            <span class="rightsideup quotation-mark">&rdquo;</span>
+         </div>
+      </div>
    </div>
 </div>

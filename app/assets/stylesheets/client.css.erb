@@ -315,9 +315,6 @@ nav {
 .form { 
    height:720px;
 }
-.form form {
-   padding-top:185px;
-}
 .form-field form span {
    display:inline-block;
    font-size:2.5em;
@@ -476,11 +473,6 @@ nav {
    position:relative;
    overflow:hidden;
    padding-top:150px;
-   position: relative;
-   top: 50%;
-   -webkit-transform: translateY(-50%);
-   -ms-transform: translateY(-50%);
-   transform: translateY(-50%);
 }
 .album .container {
    position:relative;
@@ -720,12 +712,11 @@ nav {
    right:4%;
 }
 .shop .info {
-   max-width:375px;
-   margin:0 auto;
-   margin-top:150px;
-   position:absolute;
-   left:50%;
-   z-index:20;
+   max-width: 375px;
+   margin: 0 auto;
+   position: relative;
+   margin-left: 50%;
+   z-index: 20;
 }
 .shop .info .inner-wrap {
    position: relative; 
@@ -816,4 +807,13 @@ div.cover.small-cover {
      height:auto;
      margin:0 -3.4em;
   }
+}
+.album,
+.form-content,
+.info {
+   position: relative;
+   top: 50%;
+   -webkit-transform: translateY(-50%);
+   -ms-transform: translateY(-50%);
+   transform: translateY(-50%);
 }
