@@ -476,6 +476,11 @@ nav {
    position:relative;
    overflow:hidden;
    padding-top:150px;
+   position: relative;
+   top: 50%;
+   -webkit-transform: translateY(-50%);
+   -ms-transform: translateY(-50%);
+   transform: translateY(-50%);
 }
 .album .container {
    position:relative;
@@ -810,8 +815,5 @@ div.cover.small-cover {
      width:24em;
      height:auto;
      margin:0 -3.4em;
-  }
-  div.album {
-     padding: 10% 0;
   }
 }
