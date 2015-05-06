@@ -5,7 +5,7 @@
        <h3><%= event.title %></h3>
     </div>
     <div class="content">
-        <span><%= auto_link(event.description.html_safe) %></span>
+        <span><%= auto_link(event.description.html_safe) if not event.description.nil? %></span>
     </div>
     <div class="footer">
        <a href="<%= event.link %>">BUY TICKETS</a>

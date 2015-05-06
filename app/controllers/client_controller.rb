@@ -13,6 +13,11 @@ class ClientController < ApplicationController
    def shop
    end
 
+   def shows
+      @previous_shows = Event.where("date < ?", DateTime.now)
+      @upcoming_shows = Event.where("date > ?", DateTime.now)
+   end
+
 private
 
    def request_is_ios
