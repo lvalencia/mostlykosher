@@ -1,6 +1,6 @@
 $(document).ready(function () {
   var uagent = navigator.userAgent.toLowerCase();
-  if (! (uagent.search("iphone") > -1))
+  if (! (uagent.search("iphone") > -1) && $('.top-nav-bar').length > 0)
   {
      //Sticky Navigation
      var stickyNavTop = $('.top-nav-bar').offset().top;

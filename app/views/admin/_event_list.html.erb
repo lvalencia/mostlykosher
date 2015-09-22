@@ -1,0 +1,33 @@
+<div class="list col-md-12">
+   <h4><%= title %></h4>
+   <% events.each do |event| %>
+      <div class="event-summary col-md-12">
+         <div class="col-md-8">
+            <p class="title">
+               <%= event.title ||= "No Title" %>
+            </p>
+            <p class="link">
+               <span>Link: </span><%= event.link ||= "No Link" %>
+            </p>
+            <p class="location">
+               <span>Location: </span><%= event.location ||= "No Location" %>
+            </p>
+            <p class="description">
+               <span>Description: </span><%= event.description ||= "No Description" %>
+            </p>
+            <% if event.date %>
+            <div class="created-at">
+               <abbr class="timeago" title="<%= event.date.to_time.iso8601 %>">
+                  <%= event.date.to_time.iso8601 %>
+               </abbr>
+            </div> 
+            <% else %>
+            <p class="link"><span>No date:</span> You set one.</p>
+            <% end %>
+         </div>
+         <div class="col-md-4">
+         <%= link_to "edit", controller: "event", action:"edit", id: event %> | <%= link_to "delete", controller: "event", action:"delete", id: event %>
+         </div>
+      </div>
+   <% end %>
+</div>

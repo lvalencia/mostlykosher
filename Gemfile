@@ -41,6 +41,10 @@ gem "paperclip", "~> 4.2"
 #Scheduler
 gem 'rufus-scheduler'
 
+#Extra Gems
+gem 'bcrypt'
+gem 'chronic'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

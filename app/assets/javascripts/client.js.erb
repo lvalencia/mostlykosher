@@ -1,5 +1,6 @@
 //On Load Bindings
 ready  = function () {
+   jQuery.timeago.settings.allowFuture = true;
    $("abbr.timeago").timeago();
    $('#map_canvas').gmap();
    $("#gallery-preview").owlCarousel({

@@ -1,0 +1,24 @@
+<div class="tour container-fluid">
+  <% if flash[:notice] %>
+  <div class="info col-md-12">
+     <%= flash[:notice] %>
+  </div>
+  <% end %>
+  <div class="create col-md-12">
+     <h4>Create a new Event</h4>
+     <form action="/event/create" method="POST" enctype='multipart/form-data'>
+        <input type="hidden" data-token name="authenticity_token" value="<%= form_authenticity_token %>">
+         <p>Title:</p>
+         <input type="text" name="title" placeholder="Event Title">
+         <p>Description:</p>
+         <textarea type="text" name="description" placeholder="Event Description"></textarea>
+         <p>Link:</p>
+         <textarea type="text" name="link" placeholder="Event Link"></textarea>
+         <p>Lcoation:</p>
+         <textarea type="text" name="location" placeholder="Event Lcoation"></textarea>
+        <button type="submit" class="btn btn-lg btn-primary">Create</button>
+     </form>
+  </div>
+  <%= render :partial => 'event_list', :locals => { :events => @unpublished_events, :title => "Unpublished Event" } %>
+  <%= render :partial => 'event_list', :locals => { :events => @published_events, :title => "Published Event" } %>
+</div>

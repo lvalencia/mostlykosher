@@ -14,8 +14,8 @@ class ClientController < ApplicationController
    end
 
    def shows
-      @previous_shows = Event.where("date < ?", DateTime.now)
-      @upcoming_shows = Event.where("date > ?", DateTime.now)
+      @previous_shows = Event.previous_shows
+      @upcoming_shows = Event.upcoming_shows
    end
 
 private

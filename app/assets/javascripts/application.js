@@ -13,4 +13,22 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+//= require jquery
+//= require jquery_ujs
+//= require turbolinks
+//
+// Vendor Imports
+//
+//= require ./vendor/bootstrap.js
+//= require ./vendor/moment.js
+//= require ./vendor/googlemaps.js
+//= require ./vendor/owl.carousel.min.js
+//= require ./vendor/timeago.js
+//= require ./vendor/bootstrap-datetimepicker.js
+//
+// Our Imports
+//
+//= require client.js
+//= require sticky-nav.js
+//= require parallax.js
+//
