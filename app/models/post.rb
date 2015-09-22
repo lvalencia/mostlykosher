@@ -20,7 +20,7 @@ class Post < ActiveRecord::Base
    end
  
    def self.latest_instagram_posts
-      Post.where({ feed:"instagram" }).order("posted_date desc").limit(2)
+      Post.where({ feed:"instagram" }).order("posted_date desc").limit(10)
    end
 
    def self.pull_down_posts_from_facebook
