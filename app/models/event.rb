@@ -1,6 +1,6 @@
 class Event < ActiveRecord::Base
    def self.next
-      Event.where("date > ?", DateTime.now).first
+      Event.where("date > ?", DateTime.now).where.not({published_at:nil }).first
    end
 
    def self.previous_shows
