@@ -33,7 +33,7 @@
                  <script type="text/javascript">
                      $(function () {
                          $('#datetimepicker').datetimepicker({
-                            <% if not event.date.nil? %>
+                            <% if not @event.date.nil? %>
                              defaultDate: "<%= @event.date.strftime('%m/%d/%Y') %>"
                             <% end %>
                          });
