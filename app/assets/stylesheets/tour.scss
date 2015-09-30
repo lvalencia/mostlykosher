@@ -21,13 +21,6 @@
       }
    }
 }
-@mixin vertical-align($position: relative) {
-  position: $position;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
@@ -46,10 +39,8 @@ only screen
   and (-webkit-min-device-pixel-ratio: 3) {
    .modal-tour {
       width:100%;
-      height:100%;
       margin-top:24px;
       .image-container {
-         @include vertical-align();
          img {
             width:100%;
          }
