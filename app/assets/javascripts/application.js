@@ -21,14 +21,14 @@
 //
 //= require ./vendor/bootstrap.js
 //= require ./vendor/moment.js
-//= require ./vendor/googlemaps.js
 //= require ./vendor/owl.carousel.min.js
 //= require ./vendor/timeago.js
 //= require ./vendor/bootstrap-datetimepicker.js
 //
 // Our Imports
 //
-//= require client.js
+//= require google-maps.js.erb
+//= require client.js.erb
 //= require sticky-nav.js
 //= require parallax.js
 //
