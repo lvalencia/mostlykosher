@@ -407,7 +407,7 @@ nav {
 }
 .music .video {
    min-height:680px;
-   padding:8% 0;
+   padding:8%;
    background:#fff;
    color:#111;
 }
@@ -422,17 +422,18 @@ nav {
       width: 100%;
    }
 }
-
 .music .video .aspect-ratio {
-   padding-top:56.25%; /* 16:9 , 4:3 is 75% */
-}
-.music .video .container .wrapper {
-   display: inline-block;
+   position: relative;
+   padding-bottom: 56.25%; /* 16:9 ; 4:3 is 75% */
+   padding-top: 25px;
+   height: 0;
+} 
+.music .video .aspect-ratio iframe {
    position: absolute;
    top: 0;
-   bottom: 0;
    left: 0;
-   right: 0;
+   width: 100%;
+   height:100%;
 }
 .music h4 {
    color:#111;
@@ -444,7 +445,7 @@ nav {
 }
 .music .media-info {
    display:inline-block;
-   width:365px;
+   padding-left:24px;
 }
 .center-wrap {
    margin:0 20%;
@@ -458,9 +459,21 @@ nav {
    vertical-align:top;
 }
 .video .media-info h4,
-.video .media-info{
+.video .media-info {
    font-size:1.25em;
    margin-top:0;
+}
+.video .media-info h4 {
+   margin:0;
+   display:block;
+   position:relative;
+}
+.video .media-info h4 a {
+   position:absolute;  
+   top: 36%;
+   margin-left:8px;
+   color:#e7b009;
+   opacity:0.87;
 }
 .video .media-info ul {
    margin: 0;
@@ -477,6 +490,7 @@ nav {
    display:inline-block;
 }
 .video .media-info ul li a i ,
+.video .media-info p a,
 .video .media-info span a {
    color:#e7b009;
 }
