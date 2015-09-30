@@ -21,3 +21,4 @@ secrets.yml
 /pubilc/assets/*
 /public/uploads/*
 *.swp
+*.DS_Store

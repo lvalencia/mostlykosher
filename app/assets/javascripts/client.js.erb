@@ -16,6 +16,11 @@ ready  = function () {
          $("#map_canvas").gmap('option', 'zoom', 15);
       }
    });
+   //Tour Code - Temp
+   $('#tour-modal').modal('show');
+   $('#tour-modal .close').on('click', function (e) {
+      $('nav ul li a[href="#music"]').trigger('click'); //Scroll To Music
+   });
 }
 
 //Form Submission Override
