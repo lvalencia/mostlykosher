@@ -654,6 +654,7 @@ nav {
 #about {
    background:#000 url(<%= image_path 'band-image-about.png' %>) 50% 50%;
    background-size: 1890px auto !important;
+   overflow-y:scroll;
 }
 .about {
    min-height:720px;
@@ -837,10 +838,14 @@ footer .bottom {
 }
 #shows-page .event {
    margin-left: 10%;
+   margin-bottom:32px;
 }
 #shows-page .event p {
    font-weight:bold;
    font-size:1.25em;
+}
+#shows-page .event h3 {
+   margin-top:0;
 }
 /* Media Query Overrides */
 div.cover.small-cover {
