@@ -22,3 +22,4 @@ secrets.yml
 /public/uploads/*
 *.swp
 *.DS_Store
+.idea/*
