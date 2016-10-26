@@ -8,7 +8,7 @@ class Post < ActiveRecord::Base
    end
 
    def self.latests_with_images
-      Post.order(posted_date: :desc).select { |post| post.image.present? }
+      Post.order(posted_date: :desc).limit(10).select { |post| post.image.present? }
    end
 
    def self.latest_facebook_posts
