@@ -19,22 +19,22 @@ task :sync_social_media => :environment do
       end
    end
    #Process Instagram Feed
-   instagram_feed = Post.pull_down_posts_from_instagram
-   instagram_feed.each do |post|
-      image = URI.parse(post.images.standard_resolution.url) rescue nil
-      time =  Time.at(post.caption.created_time.to_i).to_datetime
-      begin
-         Post.create({
-            feed:"instagram",
-            image:image,
-            content:post.caption.text,
-            posted_date: time,
-            title:time.strftime("%b, %d")
-         })
-      rescue => e
-         puts e.inspect
-      end
-   end
+#   instagram_feed = Post.pull_down_posts_from_instagram
+#   instagram_feed.each do |post|
+#      image = URI.parse(post.images.standard_resolution.url) rescue nil
+#      time =  Time.at(post.caption.created_time.to_i).to_datetime
+#      begin
+#         Post.create({
+#            feed:"instagram",
+#            image:image,
+#            content:post.caption.text,
+#            posted_date: time,
+#            title:time.strftime("%b, %d")
+#         })
+#      rescue => e
+#         puts e.inspect
+#      end
+#   end
    #Process Twitter Feed
    twitter_feed = Post.pull_down_posts_from_twitter
    twitter_feed.each do |tweet|

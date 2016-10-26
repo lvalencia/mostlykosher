@@ -7,16 +7,20 @@ class Post < ActiveRecord::Base
       post.unique_content
    end
 
+   def self.latests_with_images
+      Post.order(posted_date: :desc).select { |post| post.image.present? }
+   end
+
    def self.latest_facebook_posts
-      Post.where({ feed: "facebook" }).order("posted_date desc").limit(1)
+      Post.where({ feed: "facebook" }).order("posted_date desc").limit(10)
    end
   
    def self.latest_news_posts
-      Post.where({ feed: "news" }).order("posted_date desc").limit(2)
+      Post.where({ feed: "news" }).order("posted_date desc").limit(10)
    end
 
    def self.latest_twitter_posts
-      Post.where({ feed:"twitter" }).order("posted_date desc").limit(2)
+      Post.where({ feed:"twitter" }).order("posted_date desc").limit(10)
    end
  
    def self.latest_instagram_posts
