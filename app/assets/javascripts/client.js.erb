@@ -1,48 +1,48 @@
 //On Load Bindings
 ready  = function () {
-   jQuery.timeago.settings.allowFuture = true;
-   $("abbr.timeago").timeago();
-   $("#gallery-preview").owlCarousel({
-      autoPlay: 3000, //Set AutoPlay to 3 seconds
-      autoHeight: true,
-      items: 3,
-   });
-   //Tour Code - Temp
-   $('#tour-modal').modal('show');
-   $('#tour-modal .close').on('click', function (e) {
-      $('nav ul li a[href="#music"]').trigger('click'); //Scroll To Music
-   });
+  jQuery.timeago.settings.allowFuture = true;
+  $("abbr.timeago").timeago();
+  $("#gallery-preview").owlCarousel({
+    autoPlay: 3000, //Set AutoPlay to 3 seconds
+    autoHeight: true,
+    items: 3,
+  });
+  //Tour Code - Temp
+  $('#tour-modal, #residency-modal').modal('show');
+  $('#tour-modal .close').on('click', function (e) {
+    $('nav ul li a[href="#music"]').trigger('click'); //Scroll To Music
+  });
 }
 //Form Submission Override
 $(document).on("submit", "form#newsletter", function (e) {
-   e.preventDefault();
-   target = "form#newsletter";
-   $.ajax({
-      type:"POST",
-      url:"/fan/newsletter",
-      data: { email: $(this).find('input[name="email"]').val() },
-      success:function (response) {
-         if (response.status == "success") {
-            $(target+' input[name="email"],'+target+' button[type="submit"],form#newsletter span.shoutout').fadeTo("slow", 0, function () {
-               $(target+' span#thankyou').show("slow", function () {});
-            });
-         }
-         else {
-             $(target+' input[name="email"]').addClass("error");
-         }
-      },
-      error:function (error) {
+  e.preventDefault();
+  target = "form#newsletter";
+  $.ajax({
+    type:"POST",
+    url:"/fan/newsletter",
+    data: { email: $(this).find('input[name="email"]').val() },
+    success:function (response) {
+      if (response.status == "success") {
+        $(target+' input[name="email"],'+target+' button[type="submit"],form#newsletter span.shoutout').fadeTo("slow", 0, function () {
+          $(target+' span#thankyou').show("slow", function () {});
+        });
       }
-   });
+      else {
+        $(target+' input[name="email"]').addClass("error");
+      }
+    },
+    error:function (error) {
+    }
+  });
 });
 $(document).on("click", "nav ul li a[href^='#']", function(e){
-   e.preventDefault();
-   header_offset = 52;
-   delay = 1e3;
-   var target = $($(this).attr("href"));
-   $("html, body").animate({
-      scrollTop:target.offset().top-header_offset
-   }, delay);
+  e.preventDefault();
+  header_offset = 52;
+  delay = 1e3;
+  var target = $($(this).attr("href"));
+  $("html, body").animate({
+    scrollTop:target.offset().top-header_offset
+  }, delay);
 });
 
 $(document).ready(ready);

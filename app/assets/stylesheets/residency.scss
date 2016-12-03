@@ -1,0 +1,20 @@
+#residency-modal {
+  h4 {
+    color: black;
+  }
+  img {
+    width: 100%;
+  }
+  .close {
+    font-size: 16px;
+    position: absolute;
+    right: 16px;
+    outline: none;
+  }
+  p,
+  a {
+    display:block;
+    margin-top: 16px;
+    font-size: 16px;
+  }
+}
