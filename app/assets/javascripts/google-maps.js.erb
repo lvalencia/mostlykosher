@@ -55,8 +55,8 @@ ready  = function () {
     google.maps.event.addDomListener(window, 'resize', function() {
       map.setCenter(center);
     });
-    var address =  '<%= Event.next.nil? ? "Los Angeles, CA" : Event.next.location %>';
-    var infoTitle =  "<%= Event.next.nil? ? "Mostly Kosher's Hometown" : Event.next.title %>";
+    var address = $('.upcoming-event .content').attr('data-location');
+    var infoTitle = $('.upcoming-event h3').text();
     //Set Address
     geocodeAddress(geocoder,map, address, infoTitle);
   }

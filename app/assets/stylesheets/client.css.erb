@@ -197,17 +197,17 @@ nav {
    overflow:hidden;
    position:relative;
 }
-.seperator {
+.separator {
    min-height:115px;
    color:#fff;
    background:#f36b10 url(<%= asset_path 'kosher-logo-white.png' %>) no-repeat 76em -20em;
 }
-.seperator.thin {
+.separator.thin {
    margin-top:15px;
    min-height:95px;
    height:95px;
 }
-.seperator h1 {
+.separator h1 {
    margin:0;
    margin-left:7.5%;
    font-family:railway;
@@ -591,9 +591,12 @@ nav {
       top: -170px;
    }
 }
-/* Show Section */ 
+/* Show Section */
 .shows .header {
    position:relative;
+}
+.shows .header > div.separator {
+   margin-top: 0;
 }
 .gig-info h3 {
    margin:0 auto;
@@ -854,7 +857,7 @@ div.cover.small-cover {
    display:none;
 }
 @media(max-width:992px) {
-   .seperator h1 {
+   .separator h1 {
       font-size:6em;
    }
 }
