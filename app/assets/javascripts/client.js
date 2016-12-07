@@ -15,7 +15,7 @@ ready = function () {
 //Form Submission Override
 $(document).on("submit", "form#newsletter", function (e) {
   e.preventDefault();
-  target = "form#newsletter";
+  var target = "form#newsletter";
   $.ajax({
     type:"POST",
     url:"/fan/newsletter",
