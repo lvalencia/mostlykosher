@@ -27,7 +27,8 @@
 //
 // Our Imports
 //
+//= require promotion.js
 //= require google-maps.js.erb
-//= require client.js.erb
+//= require client.js
 //= require parallax.js
 //

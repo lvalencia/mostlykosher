@@ -1,5 +1,5 @@
 //On Load Bindings
-ready  = function () {
+ready = function () {
   jQuery.timeago.settings.allowFuture = true;
   $("abbr.timeago").timeago();
   $("#gallery-preview").owlCarousel({
@@ -7,11 +7,10 @@ ready  = function () {
     autoHeight: true,
     items: 3,
   });
-  //Tour Code - Temp
-  $('#tour-modal, #residency-modal').modal('show');
-  $('#tour-modal .close').on('click', function (e) {
-    $('nav ul li a[href="#music"]').trigger('click'); //Scroll To Music
-  });
+  Promotion({
+    target: '#tour-modal, #residency-modal',
+    close:  '#tour-modal .close',
+  }).show()
 }
 //Form Submission Override
 $(document).on("submit", "form#newsletter", function (e) {
@@ -45,5 +44,4 @@ $(document).on("click", "nav ul li a[href^='#']", function(e){
   }, delay);
 });
 
-$(document).ready(ready);
-$(document).on('page:load', ready);
+$(document).on('ready page:load turbolinks:load', ready);
