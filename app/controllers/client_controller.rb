@@ -16,6 +16,12 @@ class ClientController < ApplicationController
     @upcoming_shows = Event.upcoming_shows
   end
 
+  def gallery
+  end
+
+  def about
+  end
+
   private
 
   def request_is_ios
