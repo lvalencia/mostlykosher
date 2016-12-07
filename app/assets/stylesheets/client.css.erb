@@ -30,50 +30,10 @@ body {
    background-size: cover !important;
    position: relative;
 }
-/* Nav Bar */
-.sticky-nav {
-   position: fixed;
-   width: 100%;
-   top: 0;
-   z-index: 30;
-   border-top: 0;
-   left: 0;
-   right:0;
-   margin:0 auto;
-}
-.top {
-   min-height:50px;
-   background:#111; 
-   width:100%;
-   text-align:center;
-   font-family: 'Lato', sans-serif;
-   font-size:1em;
-}
-.top ul a {
-   color:#fff;
-   font-weight:300;
-}
-.top ul a:hover {
-   background-color:#333;
-   font-weight:500;
-}
-.top ul a i:hover {
-   font-size:1.15em;
-}
-nav {
-   display:inline-block;
-   overflow:auto;
-}
-.nav-container {
-   position:relative;
-   margin:0 auto;
-}
-.nav li,
-.social-media li{
+.social-media li {
     display:inline;
 }
-.nav a,
-.social-media a{
+.social-media a {
     display:inline-block;
     padding:10px;
 }
@@ -81,12 +41,6 @@ nav {
 #top {
    background-image:url(<%= asset_path 'band-image-home.png' %>);
    overflow-y:hidden;
-/* Fixes Mobile
-   background-position-y: 50% !important;
-   overflow-y: hidden;
-   background-size: contain !important;
-   background-color: black;
-*/
 }
 .top-new, .faded-background {
    width:100%;

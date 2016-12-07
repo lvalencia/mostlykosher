@@ -1,0 +1,17 @@
+$navbar-size: 40px;
+#top {
+  margin-top: $navbar-size;
+}
+.navbar {
+  min-height: $navbar-size;
+  color: white;
+  background: black;
+  a {
+    outline: none;
+    color: white;
+    text-decoration: none;
+    &:focus, &:hover {
+      color: black;
+    }
+  }
+}

@@ -29,6 +29,5 @@
 //
 //= require google-maps.js.erb
 //= require client.js.erb
-//= require sticky-nav.js
 //= require parallax.js
 //
