@@ -3,20 +3,21 @@ var Promotion = (function ($) {
     var options = {
       target: '#promo .modal',
       close: '#promo .close',
-      after: '#music'
+      after: '#music',
+      delay: 1e3,
+      offset: 40
     };
     $.extend(options, params);
     function show() {
       $(options.target).modal('show');
       $(options.close).on('click', function () {
-        var delay = 1e3;
         $('html, body').animate({
-          scrollTop: options.after.offset().top-header_offset
-        }, delay);
+          scrollTop: options.after.offset().top-options.offset
+        }, options.delay);
       });
     }
     return {
       show: show
     };
   }
-})(jQuery)
+})(jQuery);

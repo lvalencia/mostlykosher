@@ -36,8 +36,8 @@ $(document).on("submit", "form#newsletter", function (e) {
 });
 $(document).on("click", "nav ul li a[href^='#']", function(e){
   e.preventDefault();
-  header_offset = 40;
-  delay = 1e3;
+  var header_offset = 40;
+  var delay = 1e3;
   var target = $($(this).attr("href"));
   $("html, body").animate({
     scrollTop:target.offset().top-header_offset
