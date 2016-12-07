@@ -1,0 +1,5 @@
+<div class="event">
+  <h3><%= event.title %></h3>
+  <p><%= event.date.strftime('%B %d, %Y') %></p>
+  <span><%= raw(event.description) if !event.description.nil? %></span>
+</div>

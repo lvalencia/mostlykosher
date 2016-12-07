@@ -1,35 +1,10 @@
+<%= render partial: 'layouts/global_nav' %>
 <div class="container-fluid" id="shows-page">
-   <div class="row shows">
-      <div class="header">
-         <%= render partial: 'separator', :locals => {color:"#336633", text:"SHOWS", adjustment:"thin" } %>
-      </div>
-   </div>
-   <% if @upcoming_shows.count > 0 %>
-   <div class="row" id="upcoming">
-      <div class="col-md-12">
-         <h1>Upcoming</h1>
-         <% @upcoming_shows.each do |event| %>
-         <div class="event">
-            <h3><%= event.title %></h3>
-            <p><%= event.date.strftime("%B %d, %Y") %></p>
-            <span><%= raw(event.description) if not event.description.nil? %></span>
-         </div>
-         <% end %>
-      </div>
-   </div>
-   <% end %>
-   <% if @previous_shows.count > 0 %>
-   <div class="row" id="previous">
-      <div class="col-md-12">
-         <h1>Previous</h1>
-         <% @previous_shows.each do |event| %>
-         <div class="event">
-            <p><%= event.date.strftime("%B %d, %Y") %></p>
-            <h3><%= event.title %></h3>
-            <%= auto_link(event.description.html_safe) if not event.description.nil? %>
-         </div>
-         <% end %>
-      </div>
-   </div>
-   <% end %>
+  <div class="row shows">
+    <div class="header">
+      <%= render partial: 'separator', locals: {color: '#336633', text: 'SHOWS', adjustment: 'thin' } %>
+    </div>
+  </div>
+  <%= render partial: 'client/shows/section', locals: { title: 'Upcoming', shows: @upcoming_shows } %>
+  <%= render partial: 'client/shows/section', locals: { title: 'Previous', shows: @previous_shows } %>
 </div>

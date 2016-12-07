@@ -1,0 +1,6 @@
+<div class="row" id="<%= title.downcase %>">
+  <div class="col-md-12">
+    <h1><%= title %></h1>
+    <%= render partial: 'client/shows/show', collection: shows, as: :event %>
+  </div>
+</div>

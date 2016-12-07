@@ -1,7 +1,4 @@
 $navbar-size: 40px;
-#top {
-  margin-top: $navbar-size;
-}
 .navbar {
   min-height: $navbar-size;
   color: white;
@@ -14,4 +11,7 @@ $navbar-size: 40px;
       color: black;
     }
   }
+}
+.container-fluid {
+  margin-top: $navbar-size;
 }

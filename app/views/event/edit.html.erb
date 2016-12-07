@@ -1,55 +1,55 @@
 <div id="edit" class="container-fluid">
-   <h1>Edit Event Data</h4>
-   <% if flash[:updated] %>
-   <div class="info">
-      <span><%= flash[:updated] %></span>
-   </div>
-   <% end %>
-   <% if flash[:error] %>
-   <div class="error">
-      <span><%= flash[:error] %></span>
-   </div>
-   <% end %>
-   <form action='/event/<%= @event.id %>/edit' method="POST" class="col-md-12">
+  <h1>Edit Event Data</h1>
+    <% if flash[:updated] %>
+        <div class="info">
+          <span><%= flash[:updated] %></span>
+        </div>
+    <% end %>
+    <% if flash[:error] %>
+        <div class="error">
+          <span><%= flash[:error] %></span>
+        </div>
+    <% end %>
+    <form action='/event/<%= @event.id %>/edit' method="POST" class="col-md-12">
       <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
       <div class="edit-event">
-         <p>Title:</p>
-         <input type="text" name="title" value="<%= @event.title %>" placeholder="Event Title">
-         <p>Description:</p>
-         <textarea type="text" name="description" placeholder="Event Description"><%=  @event.description %></textarea>
-         <p>Link:</p>
-         <textarea type="text" name="link" placeholder="Event Link"><%= @event.link %></textarea>
-         <p>Lcoation:</p>
-         <textarea type="text" name="location" placeholder="Event Lcoation"><%= @event.location %></textarea>
-         <p>Date:</p>
-                     <div class="form-group">
-                         <div class='input-group date' id='datetimepicker'>
-                             <input type='text' class="form-control" name='date' />
-                             <span class="input-group-addon">
-                                 <span class="glyphicon glyphicon-calendar"></span>
-                             </span>
-                         </div>
-                     </div>
-                 <script type="text/javascript">
-                     $(function () {
-                         $('#datetimepicker').datetimepicker({
-                            <% if not @event.date.nil? %>
-                             defaultDate: "<%= @event.date.strftime('%m/%d/%Y') %>"
-                            <% end %>
-                         });
-                     });
-                 </script>
-         <p>Published:</p>
-         <div class="publish">
-            <input type="radio" name="publish" value="published" <%= @event.published_at ? "checked" : "" %>>
-            <span>Published</span>
-            <input type="radio" name="publish" value="unpublished" <%= @event.published_at ? "" : "checked" %>>
-            <span>Unpublished</span>
-         </div>
-         <div class="navigate">
-            <%= link_to "back", { controller:"admin", action:"home" }, class:"btn-prev" %>
-            <button type="submit" class="btn btn-lg btn-primary">Update</button>
-         </div>
+        <p>Title:</p>
+        <input type="text" name="title" value="<%= @event.title %>" placeholder="Event Title">
+        <p>Description:</p>
+        <textarea type="text" name="description" placeholder="Event Description"><%=  @event.description %></textarea>
+        <p>Link:</p>
+        <textarea type="text" name="link" placeholder="Event Link"><%= @event.link %></textarea>
+        <p>Lcoation:</p>
+        <textarea type="text" name="location" placeholder="Event Lcoation"><%= @event.location %></textarea>
+        <p>Date:</p>
+        <div class="form-group">
+          <div class='input-group date' id='datetimepicker'>
+            <input type='text' class="form-control" name='date' />
+            <span class="input-group-addon">
+              <span class="glyphicon glyphicon-calendar"></span>
+            </span>
+          </div>
+        </div>
+        <script type="text/javascript">
+          $(function () {
+            $('#datetimepicker').datetimepicker({
+              <% if not @event.date.nil? %>
+              defaultDate: "<%= @event.date.strftime('%m/%d/%Y') %>"
+              <% end %>
+            });
+          });
+        </script>
+        <p>Published:</p>
+        <div class="publish">
+          <input type="radio" name="publish" value="published" <%= @event.published_at ? "checked" : "" %>>
+          <span>Published</span>
+          <input type="radio" name="publish" value="unpublished" <%= @event.published_at ? "" : "checked" %>>
+          <span>Unpublished</span>
+        </div>
+        <div class="navigate">
+          <%= link_to "back", { controller:"admin", action:"home" }, class:"btn-prev" %>
+          <button type="submit" class="btn btn-lg btn-primary">Update</button>
+        </div>
       </div>
-   </form>
+    </form>
 </div>
