@@ -10,13 +10,14 @@ Rails.application.routes.draw do
     post 'newsletter', to: 'fan#newsletter_signup'
   end
 
+  scope '/admin' do
+    match 'login', to: 'admin#login', via: [:get, :post]
+    match 'logout', to: 'admin#logout', via: [:get, :post]
+    get 'home', to: 'admin#home'
+  end
   get '/admin', to: redirect('/admin/login')
-  resources :admin, except: [:new, :create, :edit, :show, :update, :destroy] do
-    collection do
-      get 'login'
-      post 'login'
-      get 'home'
-    end
+  namespace :admin do
+
   end
 
   resources :event, except: [:new, :create, :show, :update, :destroy] do

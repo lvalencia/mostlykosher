@@ -24,6 +24,8 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 
 group :development, :test do
+  # Testing Framework
+  gem 'rspec-rails', '~> 3.5'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 end
@@ -36,6 +38,10 @@ group :development do
   gem 'web-console', '~> 2.0'
   # Debugger
   gem 'pry'
+  gem 'pry-remote'
+  gem 'pry-rails'
+  gem 'pry-stack_explorer'
+  gem 'pry-byebug'
   # Code Quality
   gem 'rubocop'
 end
@@ -43,12 +49,12 @@ end
 gem 'rails_autolink'
 
 #Social Media 
-gem "koala", "~> 1.10.0rc" #Facebook
-gem "instagram"
-gem "twitter"
+gem 'koala', '~> 1.10.0rc' #Facebook
+gem 'instagram'
+gem 'twitter'
 
 #Image Processing
-gem "paperclip", "~> 4.2"
+gem 'paperclip', '~> 4.2'
 
 #Scheduler
 gem 'rufus-scheduler'
