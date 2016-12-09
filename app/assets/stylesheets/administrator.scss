@@ -14,9 +14,6 @@
  *
  * Vendor
  *
- *= require bootstrap.css.erb
- *= require bootstrap-theme.css
- *= require bootstrap-datetimepicker.css
  *= require font-awesome.css
  *
  * Our Imports
@@ -25,3 +22,8 @@
  *= require event.scss
  *
  */
+
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import 'bootstrap-datetimepicker';
+

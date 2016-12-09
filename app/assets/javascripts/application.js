@@ -13,19 +13,20 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require bootstrap-sprockets
+//= require moment
+//= require bootstrap-datetimepicker
 //
 // Vendor Imports
 //
-//= require bootstrap.js
 //= require moment.js
 //= require owl.carousel.min.js
 //= require timeago.js
-//= require bootstrap-datetimepicker.js
 //
 // Our Imports
 //
-//= require promotion.js
-//= require google-maps.js
-//= require client.js
-//= require parallax.js
+//= require client/promotion.js
+//= require client/google-maps.js
+//= require client/client.js
+//= require client/parallax.js
 //

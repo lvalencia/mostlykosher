@@ -14,9 +14,6 @@
  *
  * Vendor
  *
- *= require bootstrap.css.erb
- *= require bootstrap-theme.css
- *= require bootstrap-datetimepicker.css
  *= require font-awesome.css
  *= require owl.carousel.css
  *= require owl.theme.css
@@ -30,3 +27,8 @@
  *= require residency.scss
  *
  */
+
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import 'bootstrap-datetimepicker';
+

@@ -12,15 +12,19 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap-sprockets
+//= require moment
+//= require bootstrap-datetimepicker
 //
 // Vendor Imports
 //
-//= require bootstrap.js
 //= require moment.js
 //= require owl.carousel.min.js
 //= require timeago.js
-//= require bootstrap-datetimepicker.js
 //
 // Our Imports
+//
+//= require admin/event.js
+//= require admin/admin.js
 //
 //
