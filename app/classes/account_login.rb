@@ -5,13 +5,14 @@ class AccountLogin
     @options = options
   end
 
-  def login
-    return account if authenticate
+  def authenticate
+    return account if valid?
   end
 
   protected
 
-  def authenticate
+  def valid?
+    return false if account.nil?
     account.encrypted_password == BCrypt::Engine.hash_secret(password, account.salt)
   end
 

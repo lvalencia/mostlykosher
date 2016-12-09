@@ -19,12 +19,12 @@ describe AccountLogin do
     end
 
     it 'logs you in' do
-      expect(subject.login).to be(account)
+      expect(subject.authenticate).to be(account)
     end
 
     it 'does not log you in' do
-      allow(subject).to receive(:authenticate).and_return(false)
-      expect(subject.login).to be(nil)
+      allow(subject).to receive(:valid?).and_return(false)
+      expect(subject.authenticate).to be(nil)
     end
   end
 end
