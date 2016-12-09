@@ -1,0 +1,23 @@
+<div class="event-summary col-md-12">
+  <div class="col-md-8">
+    <p class="title">
+      <span>Title: </span><%= title(event) %>
+    </p>
+    <p class="link">
+      <span>Link: </span><%= link(event) %>
+    </p>
+    <p class="location">
+      <span>Location: </span><%= location(event) %>
+    </p>
+    <p class="description">
+      <span>Description: </span><%= description(event) %>
+    </p>
+    <% if event.date %>
+        <p class="date">
+          <span>Date: </span><%= event.date.strftime('%B %d, %Y') %>
+        </p>
+    <% else %>
+        <p class="link"><span>No date:</span> Set one.</p>
+    <% end %>
+  </div>
+</div>

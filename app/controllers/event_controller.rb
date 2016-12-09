@@ -1,6 +1,4 @@
 class EventController < ApplicationController
-   before_filter :require_login
-   before_filter :load_current_account
 
    def edit
       if request.post?

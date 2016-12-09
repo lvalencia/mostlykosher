@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //
 // Vendor Imports
 //
@@ -24,8 +23,4 @@
 //
 // Our Imports
 //
-//= require promotion.js
-//= require google-maps.js
-//= require client.js
-//= require parallax.js
 //

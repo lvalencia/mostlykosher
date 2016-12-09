@@ -21,4 +21,9 @@
 
 en:
   authentication:
-     failed: 'Failed to login.'
+    failed: 'Failed to login.'
+  event:
+    missing_title: 'No Title'
+    missing_link: 'No Link'
+    missing_location: 'No Location'
+    missing_description: 'No Description'

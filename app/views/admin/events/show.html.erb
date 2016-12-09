@@ -1,0 +1,6 @@
+<p id="notice"><%= notice %></p>
+
+<%= render partial: 'admin/event', locals: { event: @admin_event } %>
+
+<%= link_to 'Edit', edit_admin_event_path(@admin_event) %> |
+<%= link_to 'Back', admin_events_path %>
