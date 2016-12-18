@@ -10,7 +10,7 @@
       <span>Location: </span><%= location(event) %>
     </p>
     <p class="description">
-      <span>Description: </span><%= description(event) %>
+      <span>Description: </span><%= raw description(event) %>
     </p>
     <% if event.date %>
         <p class="date">

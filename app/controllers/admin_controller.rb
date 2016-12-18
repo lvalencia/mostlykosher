@@ -57,5 +57,4 @@ class AdminController < ApplicationController
       password: params[:password]
     }
   end
-
 end

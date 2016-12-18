@@ -10,7 +10,6 @@
           </ul>
         </div>
     <% end %>
-    <i class="fa fa-times fa-stack-1x"></i>
     <div class="field">
       <%= f.label :title %><br>
       <%= f.text_field :title %>
@@ -28,7 +27,11 @@
       <%= f.text_area :location %>
     </div>
     <div class="field">
-      <div class='input-group date' id='datetimepicker' data-date="<%= @admin_event.date.strftime('%m/%d/%Y')%>">
+      <div class='input-group date' id='datetimepicker'
+           <% if @admin_event.date %>
+           data-date="<%= @admin_event.date.strftime('%m/%d/%Y')%>"
+           <% end %>
+           >
         <%= f.text_field :date %>
         <span class="input-group-addon">
           <span class="glyphicon glyphicon-calendar"></span>

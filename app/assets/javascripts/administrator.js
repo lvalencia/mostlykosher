@@ -18,7 +18,6 @@
 //
 // Vendor Imports
 //
-//= require moment.js
 //= require owl.carousel.min.js
 //= require timeago.js
 //

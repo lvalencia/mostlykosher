@@ -5,7 +5,7 @@ gem 'rails', '4.1.4'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
+gem 'sass-rails', '>= 3.2'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
@@ -50,7 +50,6 @@ gem 'rails_autolink'
 
 #Social Media 
 gem 'koala', '~> 1.10.0rc' #Facebook
-gem 'instagram'
 gem 'twitter'
 
 #Image Processing
@@ -62,7 +61,7 @@ gem 'rufus-scheduler'
 #Extra Gems
 gem 'bcrypt'
 gem 'chronic'
-gem 'bootstrap-sass'
+gem 'bootstrap-sass', '~> 3.3.6'
 gem 'momentjs-rails', '>= 2.9.0'
 gem 'bootstrap3-datetimepicker-rails', '~> 4.17.43'
 
