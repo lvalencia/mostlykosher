@@ -69,6 +69,12 @@ class Admin::EventsController < AdminController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def admin_event_params
-      params.fetch(:admin_event, {})
+      EventParamsParser.new(
+        params: params.require(:event).permit(whitelisted_attributes)
+      ).parse
+    end
+
+    def whitelisted_attributes
+      %i(title link location description date published_at)
     end
 end

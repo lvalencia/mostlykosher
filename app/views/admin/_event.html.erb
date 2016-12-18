@@ -12,12 +12,8 @@
     <p class="description">
       <span>Description: </span><%= raw description(event) %>
     </p>
-    <% if event.date %>
-        <p class="date">
-          <span>Date: </span><%= event.date.strftime('%B %d, %Y') %>
-        </p>
-    <% else %>
-        <p class="link"><span>No date:</span> Set one.</p>
-    <% end %>
+    <p class="date">
+      <span>Date: </span><%= date(event) %>
+    </p>
   </div>
 </div>

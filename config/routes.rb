@@ -14,7 +14,6 @@ Rails.application.routes.draw do
     match 'login', to: 'admin#login', via: :post
     match 'logout', to: 'admin#logout', via: [:get, :post]
     get 'signin', to: 'admin#signin'
-    get 'home', to: 'admin#home'
   end
 
   get '/admin', to: redirect('/admin/signin')
@@ -22,14 +21,4 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :events
   end
-
-  # Remove This when Done
-  resources :event, except: [:new, :create, :show, :update, :destroy] do
-    collection do
-      get  'delete'
-      post 'create'
-      post ':id/edit' => 'event#edit'
-    end
-  end
-
 end

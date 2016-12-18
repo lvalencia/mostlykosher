@@ -29,9 +29,8 @@
     <div class="field">
       <div class='input-group date' id='datetimepicker'
            <% if @admin_event.date %>
-           data-date="<%= @admin_event.date.strftime('%m/%d/%Y')%>"
-           <% end %>
-           >
+           data-datetime="<%= @admin_event.date.iso8601 %>"
+           <% end %>>
         <%= f.text_field :date %>
         <span class="input-group-addon">
           <span class="glyphicon glyphicon-calendar"></span>
@@ -39,9 +38,9 @@
       </div>
     </div>
     <div class="field">
-      <%= f.label :published %><br>
-      <%= f.radio_button :published_at, '', checked: (@admin_event.published_at ? 'checked' : '') %>
-      <%= f.label :unpublished %><br>
+      <%= f.label :published %>
+      <%= f.radio_button :published_at, 'published', checked: (@admin_event.published_at ? 'checked' : '') %>
+      <%= f.label :unpublished %>
       <%= f.radio_button :published_at, '', checked: (@admin_event.published_at ? '' : 'checked') %>
     </div>
 

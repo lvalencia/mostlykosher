@@ -28,13 +28,6 @@ class AdminController < ApplicationController
     redirect_to root_path
   end
 
-  def home
-    @unpublished_events = Event.unpublished
-    @published_events = Event.published
-    @previous_shows = Event.previous_shows
-    @upcoming_shows = Event.upcoming_shows
-  end
-
   protected
 
   def require_login
@@ -56,5 +49,9 @@ class AdminController < ApplicationController
       email: params[:user],
       password: params[:password]
     }
+  end
+
+  def home_path
+    admin_events_path
   end
 end

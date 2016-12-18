@@ -14,4 +14,9 @@ module Admin::EventsHelper
   def location(event)
     event.location || i18n.t(:missing_location, scope: :event)
   end
+
+  def date(event)
+    return event.date.strftime('%B %d, %Y') if event.date
+    'No DateTime Set Yet'
+  end
 end
