@@ -1,19 +1,19 @@
-<div class="event-summary col-md-12">
-  <div class="col-md-8">
-    <p class="title">
-      <span>Title: </span><%= title(event) %>
-    </p>
-    <p class="link">
-      <span>Link: </span><%= link(event) %>
-    </p>
-    <p class="location">
-      <span>Location: </span><%= location(event) %>
-    </p>
-    <p class="description">
-      <span>Description: </span><%= raw description(event) %>
-    </p>
-    <p class="date">
-      <span>Date: </span><%= date(event) %>
-    </p>
-  </div>
-</div>
+<h3>Band Event (Preview)</h3>
+<p class="title">
+  <span>Title: </span><%= title(event) %>
+</p>
+<p class="link">
+  <span>Link: </span><%= link(event) %>
+</p>
+<p class="location">
+  <span>Location: </span><%= location(event) %>
+</p>
+<p class="description">
+  <span>Description: </span><br/><%= raw description(event) %>
+</p>
+<p class="date">
+  <span>Date: </span><%= date(event) %>
+</p>
+<p class="published">
+  <span>Published: </span><%= event.published_at.present? %>
+</p>

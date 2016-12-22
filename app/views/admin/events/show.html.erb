@@ -1,6 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<%= render partial: 'admin/event', locals: { event: @admin_event } %>
+<div class="event-summary col-md-12">
+  <div class="col-md-8">
+    <%= render partial: 'admin/event', locals: { event: @admin_event } %>
 
-<%= link_to 'Edit', edit_admin_event_path(@admin_event) %> |
-<%= link_to 'Back', admin_events_path %>
+    <%= link_to 'Edit', edit_admin_event_path(@admin_event) %> |
+    <%= link_to 'Back', admin_events_path %>
+  </div>
+</div>

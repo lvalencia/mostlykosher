@@ -21,6 +21,11 @@
    border-radius:8px;
    padding:8px 16px;
 }
+.event-summary {
+  span {
+    font-weight: bold;
+  }
+}
 .event {
   .episodes {
     padding:0;

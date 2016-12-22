@@ -17,7 +17,7 @@
           <%= admin_event.title || I18n.t(:missing_title, scope: :event) %>
         </td>
         <td><%= date(admin_event) %></td>
-        <td><%= !admin_event.published_at.nil? %></td>
+        <td><%= admin_event.published_at.present? %></td>
         <td><%= link_to 'Show', admin_event_path(admin_event) %></td>
         <td><%= link_to 'Edit', edit_admin_event_path(admin_event) %></td>
         <td><%= link_to 'Destroy', admin_event_path(admin_event), method: :delete, data: { confirm: 'Are you sure?' } %></td>

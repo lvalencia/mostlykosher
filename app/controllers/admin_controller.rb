@@ -19,7 +19,7 @@ class AdminController < ApplicationController
         redirect_to home_path
       end
     else
-      redirect_to home_path unless !logged_in?
+      redirect_to home_path if logged_in?
     end
   end
 
@@ -31,7 +31,7 @@ class AdminController < ApplicationController
   protected
 
   def require_login
-    return redirect_to signin_path if !logged_in?
+    return redirect_to signin_path unless logged_in?
   end
 
   def load_current_account
@@ -39,7 +39,7 @@ class AdminController < ApplicationController
   end
 
   def logged_in?
-    !session[:account].nil?
+    session[:account].present?
   end
 
   private
