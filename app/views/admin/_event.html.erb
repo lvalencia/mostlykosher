@@ -17,3 +17,5 @@
 <p class="published">
   <span>Published: </span><%= event.published_at.present? %>
 </p>
+<div id="map_canvas" data-location="<%= event.location %>"></div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYoO0xKPGXtMYvI9fOqzAKYqT3T0Y_5iY&callback=window.MostlyKosher.googleCallback" async defer data-turbolinks-permanent></script>

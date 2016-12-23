@@ -23,7 +23,7 @@
 //
 // Our Imports
 //
+//= require shared/event-map.js
 //= require admin/event.js
 //= require admin/admin.js
-//
 //

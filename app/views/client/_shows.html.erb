@@ -1,31 +1,31 @@
 <div class="row shows" id="shows" data-parallax="base">
-   <div class="header">
-      <%= render partial: 'separator', :locals => {color:"#336633", text:"SHOWS" } %>
-   </div>
-   <div class="schedule">
-      <div class="gig-info">
-         <div class="row">
-            <div class="col-xs-6">
-            </div>
-            <div class="col-xs-6">
-               <h3>UPCOMING EVENTS</h3>
-            </div>
-         </div>
-         <div class="row">
-            <div class="col-xs-6">
-               <div id="map_canvas"></div>
-            </div>
-            <div class="col-xs-6">
-               <%= render partial: 'upcoming_event', :locals => { event: @next_event } %>
-            </div>
-         </div> 
-         <div class="row">
-            <div class="col-xs-12">
-               <div class="booking">
-               <p class="booking"><a href="/shows">Click Here</a> to see a full list of upcoming and past shows!</p>
-               </div>
-            </div>
-         </div>
+  <div class="header">
+    <%= render partial: 'separator', locals: { color: '#336633', text: 'SHOWS' } %>
+  </div>
+  <div class="schedule">
+    <div class="gig-info">
+      <div class="row">
+        <div class="col-xs-6">
+        </div>
+        <div class="col-xs-6">
+          <h3>UPCOMING EVENTS</h3>
+        </div>
       </div>
-   </div>
+      <div class="row">
+        <div class="col-xs-6">
+          <div id="map_canvas" data-location="<%= @next_event.location %>"></div>
+        </div>
+        <div class="col-xs-6">
+          <%= render partial: 'upcoming_event', :locals => { event: @next_event } %>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="booking">
+            <p class="booking"><a href="/shows">Click Here</a> to see a full list of upcoming and past shows!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

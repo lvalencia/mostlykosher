@@ -25,8 +25,8 @@
 //
 // Our Imports
 //
+//= require shared/event-map.js
 //= require client/promotion.js
-//= require client/google-maps.js
 //= require client/client.js
 //= require client/parallax.js
 //

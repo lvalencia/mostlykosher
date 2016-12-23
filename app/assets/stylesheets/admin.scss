@@ -100,6 +100,9 @@ $regular-padding: 16px;
       text-decoration:none;
     }
   }
+  #map_canvas {
+    margin: 16px 0;
+  }
   /* Boostrap Plugin Overrides */
   .bootstrap-datetimepicker-widget {
     table thead th {

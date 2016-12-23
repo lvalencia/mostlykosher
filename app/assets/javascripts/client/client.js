@@ -1,5 +1,6 @@
-//On Load Bindings
+// Bindings
 ready = function () {
+  // Time Ago Setup
   jQuery.timeago.settings.allowFuture = true;
   $("abbr.timeago").timeago();
   $("#gallery-preview").owlCarousel({
@@ -7,12 +8,13 @@ ready = function () {
     autoHeight: true,
     items: 3,
   });
+  // Promote Any Promotions
   Promotion({
     target: '#tour-modal, #residency-modal',
     close:  '#tour-modal .close',
   }).show()
 }
-//Form Submission Override
+// Form Submission Override
 $(document).on("submit", "form#newsletter", function (e) {
   e.preventDefault();
   var target = "form#newsletter";
@@ -34,6 +36,7 @@ $(document).on("submit", "form#newsletter", function (e) {
     }
   });
 });
+// Navigation Scroll
 $(document).on("click", "nav ul li a[href^='#']", function(e){
   e.preventDefault();
   var header_offset = 40;
@@ -43,5 +46,8 @@ $(document).on("click", "nav ul li a[href^='#']", function(e){
     scrollTop:target.offset().top-header_offset
   }, delay);
 });
-
+// Ready Trigger
 $(document).on('ready page:load turbolinks:load', ready);
+// Set Google Maps Callback
+window.MostlyKosher = window.MostlyKosher || {}
+window.MostlyKosher.googleCallback = EventMap().googleCallback;
