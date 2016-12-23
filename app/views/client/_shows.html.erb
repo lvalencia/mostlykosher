@@ -13,7 +13,7 @@
       </div>
       <div class="row">
         <div class="col-xs-6">
-          <div id="map_canvas" data-location="<%= @next_event.location %>"></div>
+          <div id="map_canvas" data-location="<%= @next_event.location if @next_event.present? %>"></div>
         </div>
         <div class="col-xs-6">
           <%= render partial: 'upcoming_event', :locals => { event: @next_event } %>
