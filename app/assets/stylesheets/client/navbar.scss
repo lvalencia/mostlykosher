@@ -11,7 +11,18 @@ $navbar-size: 40px;
       color: black;
     }
   }
+  button.navbar-toggle {
+    border-width: 0;
+    font-size: 16px;
+    &:hover, &:active, &:focus {
+      color: #2E2F30;
+    }
+  }
+  .navbar-collapse {
+    max-height: 360px;
+  }
 }
 .container-fluid {
   margin-top: $navbar-size;
 }
+

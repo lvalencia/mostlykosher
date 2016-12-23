@@ -20,12 +20,12 @@
  *
  * Our Imports
  *
- *= require parallax.css
- *= require client.css.erb
- *= require style.scss
- *= require tour.scss
- *= require residency.scss
- *= require event-map.scss
+ *= require client/parallax.css
+ *= require client/client.css.erb
+ *= require client/navbar.scss
+ *= require client/tour.scss
+ *= require client/residency.scss
+ *= require shared/event-map.scss
  *
  */
 
