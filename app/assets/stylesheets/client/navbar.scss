@@ -1,6 +1,13 @@
-$navbar-size: 40px;
+@import 'bootstrap/_variables';
+@import 'shared/material-design';
+$navbar-sm-size: 40px;
+$navbar-md-size: 60px;
 .navbar {
-  min-height: $navbar-size;
+  min-height: $navbar-sm-size;
+  /* Medium devices (desktops, 992px and up) */
+  @media (min-width: $screen-md-min) {
+    min-height: $navbar-md-size;
+  }
   color: white;
   background: black;
   a {
@@ -10,10 +17,15 @@ $navbar-size: 40px;
     &:focus, &:hover {
       color: black;
     }
+    font-size: $subheading;
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: $screen-md-min) {
+      font-size: $headline;
+    }
   }
   button.navbar-toggle {
     border-width: 0;
-    font-size: 16px;
+    font-size: $subheading;
     margin-right: 0;
     &:hover, &:active, &:focus {
       color: #2E2F30;
@@ -24,6 +36,6 @@ $navbar-size: 40px;
   }
 }
 .container-fluid {
-  margin-top: $navbar-size;
+  margin-top: $navbar-sm-size;
 }
 

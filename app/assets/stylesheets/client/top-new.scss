@@ -28,14 +28,50 @@
     .text-overlay-outer {
       margin-top: 16px;
       width: 100%;
+      /* Small devices (tablets, 768px and up) */
+      @media (min-width: $screen-sm-min) {
+        margin-top: 32px;
+      }
+      /* Medium devices (desktops, 992px and up) */
+      @media (min-width: $screen-md-min) {
+        margin-top: 48px;
+      }
+      /* Large devices (large desktops, 1200px and up) */
+      @media (min-width: $screen-lg-min) {
+        margin-top: 56px;
+      }
     }
     h1 {
       font-size: $display1;
+      /* Small devices (tablets, 768px and up) */
+      @media (min-width: $screen-sm-min) {
+        font-size: $display2;
+      }
+      /* Medium devices (desktops, 992px and up) */
+      @media (min-width: $screen-md-min) {
+        font-size: $display3;
+      }
+      /* Large devices (large desktops, 1200px and up) */
+      @media (min-width: $screen-lg-min) {
+        font-size: $display4;
+      }
     }
     h4 {
       margin-top: 0px;
       font-size: $headline;
       font-family: Verdana;
+      /* Small devices (tablets, 768px and up) */
+      @media (min-width: $screen-sm-min) {
+        font-size: $display1;
+      }
+      /* Medium devices (desktops, 992px and up) */
+      @media (min-width: $screen-md-min) {
+        font-size: $display2;
+      }
+      /* Large devices (large desktops, 1200px and up) */
+      @media (min-width: $screen-lg-min) {
+        font-size: $display3;
+      }
     }
     h1, h4 {
       color: #fff;
@@ -74,6 +110,14 @@
         margin: 0 auto;
         padding-left: 0px;
         font-size: $display2;
+        /* Medium devices (desktops, 992px and up) */
+        @media (min-width: $screen-md-min) {
+          font-size: $display3;
+        }
+        /* Large devices (large desktops, 1200px and up) */
+        @media (min-width: $screen-lg-min) {
+          font-size: $display4;
+        }
       }
       ul li{
         opacity: 0.75;
@@ -84,10 +128,4 @@
     }
   }
 }
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: $screen-md-min) { }
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: $screen-lg-min) { }
 
