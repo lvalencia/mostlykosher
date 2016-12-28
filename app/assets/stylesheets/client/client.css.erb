@@ -37,113 +37,16 @@ body {
     display:inline-block;
     padding:10px;
 }
-/* Word to Bubbe */
 #top {
-   background-image:url(<%= asset_path 'band-image-home.png' %>);
-   overflow-y:hidden;
-}
-.top-new, .faded-background {
-   width:100%;
-   height:1000px;
-   overflow:hidden;
-   position:relative;
-}
-.faded-background {
-   position:absolute;
-   width:100%;
-}
-.top-new h1 {
-   font-size:3.68em;
-   margin-bottom:0px;
-   margin-top:0.5em;
-}
-.top-new h4 {
-   margin-top:0px;
-   font-size:1.68em;
-   font-family:Verdana;
-}
-.top-new h1, h4 {
-   color:#fff;
-}
-.transparent-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 5;
-  background-color:rgba(150, 60, 20, 0.08);
-}
-.top-new img {
-   display: inline;
-   width:100%;
-   height:auto;
-   position: absolute;
-   left: 0;
-   right: 0;
-   margin-left: auto;
-   margin-right: auto;
-   bottom: -240px;
-/* Blur if it Needs to Come back
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
-*/
-}
-@media screen and (max-width:1460px){
-    .top-new img {
-       bottom:0;
-    }
+  background-image:url(<%= asset_path 'band-image-home.png' %>);
 }
 .text-overlay-outer {
    position:absolute;
-   left:50%;
+   z-index:10;
 }
 .text-overlay-inner {
    position:relative;
-   left:-50%;
    text-align:center;
-}
-.background-image-container {
-   position: relative;
-   text-align: center;
-   width: 100%;
-   height: 100%;
-}
-.text-overlay-outer {
-   z-index:10;
-}
-.left-center {
-    float: left;
-    position: relative;
-    left: 35%;
-    text-align:left;
-}
-.news-media .social-media a, 
-.news-media .social-media h2, 
-.news-media .social-media ul li a {
-   font-family:railway;
-   color:#fff;
-}
-.news-media .social-media h2 {
-   font-size:2.5em;
-}
-.news-media .social-media a {
-   font-weight:lighter;
-}
-.news-media ul {
-   padding-left:0px;
-   font-size:2.75em;
-}
-.news-media ul li{
-   opacity:0.75;
-}
-.news-media ul li:hover{
-   opacity:1;
 }
 /* Whats Nu */
 .new, .new-content {

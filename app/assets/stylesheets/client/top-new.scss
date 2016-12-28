@@ -1,0 +1,93 @@
+@import 'bootstrap/_variables';
+@import 'shared/material-design';
+/* Word to Bubbe */
+#top {
+  overflow-y: hidden;
+  .top-new, .faded-background {
+    width: 100%;
+    height: 1000px;
+    overflow: hidden;
+    position: relative;
+  }
+  .faded-background {
+    position: absolute;
+    width: 100%;
+    .transparent-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 5;
+      background-color: rgba(150, 60, 20, 0.08);
+    }
+  }
+  .top-new {
+    .text-overlay-outer {
+      margin-top: 16px;
+      width: 100%;
+    }
+    h1 {
+      font-size: $display1;
+    }
+    h4 {
+      margin-top: 0px;
+      font-size: $headline;
+      font-family: Verdana;
+    }
+    h1, h4 {
+      color: #fff;
+    }
+    img {
+      display: inline;
+      width: 100%;
+      height: auto;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      bottom: -240px;
+      @media screen and (max-width: 1460px){
+        bottom: 0;
+      }
+    }
+    .news-media {
+      .social-media {
+        a,
+        h2,
+        ul li a {
+          font-family: railway;
+          color: #fff;
+        }
+        h2 {
+          font-size: $title;
+        }
+        a {
+          font-weight: lighter;
+        }
+      }
+      ul {
+        width: 84%;
+        margin: 0 auto;
+        padding-left: 0px;
+        font-size: $display2;
+      }
+      ul li{
+        opacity: 0.75;
+        &:hover{
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) { }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) { }
+
