@@ -22,15 +22,15 @@
 en:
   authentication:
     failed: 'Failed to login.'
-  event:
-    missing_title: 'No Title'
-    missing_link: 'No Link'
-    missing_location: 'No Location'
-    missing_description: 'No Description'
   admin:
     navbar:
       events: 'Events'
       reviews: 'Reviews'
+    event:
+      missing_title: 'No Title'
+      missing_link: 'No Link'
+      missing_location: 'No Location'
+      missing_description: 'No Description'
     reviews:
       missing_link: 'No Link'
       missing_ordering: 'No Order Specified'

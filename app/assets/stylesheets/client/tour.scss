@@ -1,5 +1,4 @@
 .modal-tour {
-   margin:0 auto;
    text-align:center;
    .image-container {
       display:inline-block;
@@ -17,48 +16,6 @@
          opacity:0.5;
          &:hover {
             opacity:1;
-         }
-      }
-   }
-}
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2),
-only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2),
-only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2),
-only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3) {
-   .modal-tour {
-      width:100%;
-      margin-top:24px;
-      .image-container {
-         img {
-            width:100%;
-         }
-         button {
-            font-size:24px;
-         }
-      }
-   }
-}
-@media (max-width: 835px) {
-   .modal-tour {
-      width:100%;
-      .image-container {
-         img {
-            width:100%;
-         }
-         button {
-            font-size:24px;
          }
       }
    }

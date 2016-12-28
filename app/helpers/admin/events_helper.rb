@@ -1,18 +1,22 @@
 module Admin::EventsHelper
   def title(event)
-    event.title || i18n.t(:missing_title, scope: :event)
+    return event.title if event.title.present?
+    I18n.t(:missing_title, scope: [:admin, :event])
   end
 
   def link(event)
-    event.link || i18n.t(:missing_link, scope: :event)
+    return event.link if event.link.present?
+    I18n.t(:missing_link, scope: [:admin, :event])
   end
 
   def description(event)
-    event.description || i18n.t(:missing_description, scope: :event)
+    return event.description if event.description.present?
+    I18n.t(:missing_description, scope: [:admin, :event])
   end
 
   def location(event)
-    event.location || i18n.t(:missing_location, scope: :event)
+    return event.location if event.location.present?
+    I18n.t(:missing_location, scope: [:admin, :event])
   end
 
   def date(event)
