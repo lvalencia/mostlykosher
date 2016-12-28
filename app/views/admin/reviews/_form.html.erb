@@ -1,0 +1,34 @@
+<%= form_for([:admin, @admin_review]) do |f| %>
+    <% if @admin_review.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@admin_review.errors.count, "error") %> prohibited this admin_review from being saved:</h2>
+
+          <ul>
+            <% @admin_review.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label :quote %><br>
+      <%= f.text_area :quote %>
+    </div>
+    <div class="field">
+      <%= f.label :entity %><br>
+      <%= f.text_field :entity %>
+    </div>
+    <div class="field">
+      <%= f.label :link %><br>
+      <%= f.text_field :link %>
+    </div>
+    <div class="field">
+      <%= f.label :order %><br>
+      <%= f.number_field :ordering %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+<% end %>

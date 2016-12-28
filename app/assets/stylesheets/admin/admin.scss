@@ -1,3 +1,5 @@
+@import 'bootstrap/_variables';
+@import 'shared/material-design';
 @mixin input-reset {
   outline:none;
   border:0;
@@ -32,6 +34,7 @@ $small-padding: 8px;
 $regular-padding: 16px;
 #admin {
   @include font-stack;
+  margin-top: 75px;
   height:100vh;
   width:100%;
   background:white;
@@ -98,6 +101,12 @@ $regular-padding: 16px;
       content:"\f100";
       margin-right:8px;
       text-decoration:none;
+    }
+  }
+  .navbar ul li a{
+   /* Medium devices (desktops, 992px and up) */
+    @media (min-width: $screen-md-min) {
+      font-size: $headline;
     }
   }
   #map_canvas {

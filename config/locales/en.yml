@@ -27,3 +27,10 @@ en:
     missing_link: 'No Link'
     missing_location: 'No Location'
     missing_description: 'No Description'
+  admin:
+    navbar:
+      events: 'Events'
+      reviews: 'Reviews'
+    reviews:
+      missing_link: 'No Link'
+      missing_ordering: 'No Order Specified'

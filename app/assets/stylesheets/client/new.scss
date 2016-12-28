@@ -1,7 +1,8 @@
 @import 'bootstrap/_variables';
 @import 'shared/material-design';
+@import 'shared/kosher-colors';
 /* Whats Nu */
-#new-container {
+#new {
   padding: 0;
   width: 100%;
   margin: 0;
@@ -11,43 +12,6 @@
   width:100%;
   overflow:hidden;
   position:relative;
-  .separator {
-    background-size: 200px;
-    background-position: 232px 0px;
-    /* Small devices (tablets, 768px and up) */
-    @media (min-width: $screen-sm-min) {
-      background-size: 275px;
-      background-position: right center;
-    }
-    /* Medium devices (desktops, 992px and up) */
-    @media (min-width: $screen-md-min) {
-      background-size: 375px;
-    }
-    &.thin {
-      margin-top:15px;
-      min-height:95px;
-      height:95px;
-    }
-    h1 {
-      margin:16px 16px 8px 16px;
-      font-family:railway;
-      font-weight:lighter;
-      font-size: $display3;
-      position:absolute;
-      bottom:0;
-      line-height: 0.75em;
-      width: 50%;
-      /* Small devices (tablets, 768px and up) */
-      @media (min-width: $screen-sm-min) {
-        font-size: 64px;
-        width: 75%;
-      }
-      /* Medium devices (desktops, 992px and up) */
-      @media (min-width: $screen-md-min) {
-        font-size: $display4;
-      }
-    }
-  }
   .main {
     min-height:680px;
     height:auto;
@@ -64,7 +28,7 @@
       font-size: $subheading;
     }
     a {
-      color:#f36b10;
+      color:$kosher-orange;
     }
   }
   p {
@@ -90,9 +54,46 @@
     }
   }
 }
+.separator {
+  background-size: 200px;
+  background-position: 232px 0px;
+  /* Small devices (tablets, 768px and up) */
+  @media (min-width: $screen-sm-min) {
+    background-size: 275px;
+    background-position: right center;
+  }
+  /* Medium devices (desktops, 992px and up) */
+  @media (min-width: $screen-md-min) {
+    background-size: 375px;
+  }
+  &.thin {
+    margin-top:15px;
+    min-height:95px;
+    height:95px;
+  }
+  h1 {
+    margin:16px 16px 8px 16px;
+    font-family:railway;
+    font-weight:lighter;
+    font-size: $display3;
+    position:absolute;
+    bottom:0;
+    line-height: 0.75em;
+    width: 50%;
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: $screen-sm-min) {
+      font-size: 64px;
+      width: 75%;
+    }
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: $screen-md-min) {
+      font-size: $display4;
+    }
+  }
+}
 .info-card {
-  border: 2px solid #f36b10;
-  color:#f36b10;
+  border: 2px solid $kosher-orange;
+  color:$kosher-orange;
   display:inline-block;
   height:415px;
   max-width:330px;
@@ -104,7 +105,7 @@
   .review {
     text-align:center;
     quote a {
-      color:#f36b10;
+      color:$kosher-orange;
     }
     quote,
     span {
@@ -132,7 +133,7 @@
     }
     h4 {
       clear:right;
-      color:#f36b10;
+      color:$kosher-orange;
       line-height:150%;
     }
     .review, .filler {
@@ -150,7 +151,7 @@
       color:#111;
       word-wrap: break-word;
       a {
-        color:#f36b10;
+        color:$kosher-orange;
       }
     }
   }
@@ -165,7 +166,7 @@
 .upcoming-event .footer {
   width:100%;
   height:60px;
-  background-color:#f36b10;
+  background-color:$kosher-orange;
   position: absolute; bottom: 0; left: 0;
   text-align:center;
   a {

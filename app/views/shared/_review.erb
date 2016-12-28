@@ -1,0 +1,7 @@
+<blockquote>
+  "<%= review.quote %>"
+  <footer><%= review.entity %></footer>
+  <% if review.link.present? %>
+      <a href="<%= review.link %>" style="color:#f36b10;">read a full review here!</a>
+  <% end %>
+</blockquote>

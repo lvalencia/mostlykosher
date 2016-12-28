@@ -1,0 +1,17 @@
+<nav class="navbar navbar-default navbar-fixed-top col col-lg-12 col-md-12 col-xs-12">
+  <div class="navbar-header mobile-navbar visible-xs-block">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile-menu">
+      <span class="glyphicon glyphicon-menu-hamburger"></span>
+    </button>
+  </div>
+  <div class="collapse navbar-collapse" id="mobile-menu">
+    <ul class="nav nav-justified">
+      <li>
+        <%= link_to I18n.t(:events, scope: [:admin, :navbar]), admin_events_path %>
+      </li>
+      <li>
+        <%= link_to I18n.t(:reviews, scope: [:admin, :navbar]), admin_reviews_path %>
+      </li>
+    </ul>
+  </div>
+</nav>
