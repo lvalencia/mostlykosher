@@ -1,10 +1,10 @@
 <div class="row" id="new" data-parallax="base">
   <div class="new">
-    <%= render partial: 'separator', locals: { color:'#f36b10', text:'WHAT\'S NU?' } %>
+    <%= render partial: 'separator', locals: { color:'#f36b10', text: I18n.t(:header, scope: [:client, :news]) } %>
   </div>
   <div class="new-content">
     <div class="main">
-      <p>Oy, do people love us!</p><br/>
+      <p><%= I18n.t(:title, scope: [:client, :news]) %></p><br/>
       <%= render partial: 'shared/review', collection: @reviews, as: :review %>
       <br/>
     </div>

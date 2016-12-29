@@ -22,6 +22,19 @@
 en:
   authentication:
     failed: 'Failed to login.'
+  client:
+    top_new:
+      band_name: 'Mostly Kosher'
+      subheading: 'word to your bubbe'
+    news:
+      header: WHAT'S NU?
+      title: 'Oy, do people love us!'
+    sign_up:
+      title: Don't be a shmendrick!
+      subtitle: 'Sign up for our Newsletter!'
+      quote: 'May you grow like an onion with you head on the ground!'
+      call_to_action: 'Sign Up!'
+      thank_you: Welcome to the Family! Chicken soup is on it's way!
   admin:
     navbar:
       events: 'Events'
