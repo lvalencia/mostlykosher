@@ -1,6 +1,6 @@
-<div class="col col-lg-12 col-md-12 col-sm-12 form" id="form" data-parallax="back" data-type="background">
+<div class="form row" id="form" data-parallax="back" data-type="background">
   <div data-parallax="wrapper">
-    <div class="form-content">
+    <div class="form-content col col-sm-12">
       <div class="form-field col-sm-12">
         <form id="newsletter" action="/fan/newsletter" method="POST">
           <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
@@ -10,18 +10,16 @@
           <span class="shoutout col-sm-12">
             <%= I18n.t(:subtitle, scope: [:client, :sign_up]) %>
           </span>
-          <div class="input-fields">
-            <input type="text" name="email" class="col-sm-12">
-            <span id="thankyou" style="display:none;">
-              <%= I18n.t(:thank_you, scope: [:client, :sign_up]) %>
-            </span>
-            <button type="submit" class="col-sm-12">
-              <%= I18n.t(:call_to_action, scope: [:client, :sign_up]) %>
-            </button>
-          </div>
+          <input type="text" name="email" class="col-sm-12">
+          <span id="thankyou" style="display:none;">
+            <%= I18n.t(:thank_you, scope: [:client, :sign_up]) %>
+          </span>
+          <button type="submit" class="col-sm-12">
+            <%= I18n.t(:call_to_action, scope: [:client, :sign_up]) %>
+          </button>
         </form>
       </div>
-      <div class="quote">
+      <div class="quote col-sm-12">
         <span class="upsidedown quotation-mark">&ldquo;</span>
         <span>
           <%= I18n.t(:quote, scope: [:client, :sign_up]) %>
