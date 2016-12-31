@@ -26,6 +26,6 @@ class ClientController < ApplicationController
 
   def request_is_ios
     user_agent = request.env['HTTP_USER_AGENT'].to_s.downcase
-    (user_agent.include? 'ipod' || user_agent.include?('ipad') || user_agent.include?('iphone'))
+    (user_agent.include?('ipod') || user_agent.include?('ipad') || user_agent.include?('iphone'))
   end
 end
