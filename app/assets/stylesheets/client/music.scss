@@ -12,7 +12,10 @@
     position: relative;
   }
   .video {
-    min-height: 680px;
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: $screen-sm-min) {
+      min-height: 680px;
+    }
     padding: 16px 0;
     background: #fff;
     color: #111;
@@ -65,9 +68,13 @@
   overflow: hidden;
   vertical-align: top;
   margin-top: 0;
-  font-size: $headline;
+  font-size: $title;
   /* Small devices (tablets, 768px and up) */
   @media (min-width: $screen-sm-min) {
+    font-size: $headline;
+  }
+  /* Medium devices (desktops, 992px and up) */
+  @media (min-width: $screen-md-min) {
     font-size: $display1;
   }
   > * + * {
@@ -86,6 +93,7 @@
   ul.social-media {
     padding: 0;
     font-size: $display1;
+    /* Small devices (tablets, 768px and up) */
     @media (min-width: $screen-sm-min) {
       font-size: $display3;
     }

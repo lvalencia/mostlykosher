@@ -1,0 +1,74 @@
+@import 'bootstrap/_variables';
+@import 'shared/material-design';
+@import 'shared/kosher-colors';
+
+#album {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 560px;
+  .debut {
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: $screen-sm-min) {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    > * + * {
+      margin-top: 16px;
+      /* Small devices (tablets, 768px and up) */
+      @media (min-width: $screen-sm-min) {
+        margin-top: 0;
+      }
+    }
+  }
+  .text {
+    color:#fff;
+    text-align: center;
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: $screen-sm-min) {
+      text-align:right;
+    }
+    h1 {
+      margin: 0 auto;
+      /* Small devices (tablets, 768px and up) */
+      @media (min-width: $screen-sm-min) {
+        font-size: $display2;
+      }
+    }
+    > * + * {
+      /* Small devices (tablets, 768px and up) */
+      @media (min-width: $screen-sm-min) {
+        margin-top: 16px;
+      }
+    }
+    .buy {
+      a.itunes {
+        color: $kosher-yellow;
+      }
+      p {
+        font-size: $title;
+      }
+    }
+  }
+  .album {
+    text-align: center;
+    .cover {
+      img {
+        width: 100%;
+      }
+    }
+    a.btn {
+      margin-top: 16px;
+    }
+  }
+  .album,
+  .text {
+    a:not(.itunes) {
+      background-color: $kosher-yellow;
+      color: #fff;
+      font-size: $title;
+      padding: 16px;
+    }
+  }
+}
+
