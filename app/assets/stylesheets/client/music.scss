@@ -1,0 +1,102 @@
+@import 'bootstrap/_variables';
+@import 'shared/material-design';
+@import 'shared/kosher-colors';
+
+#music {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.music {
+  .header {
+    position: relative;
+  }
+  .video {
+    min-height: 680px;
+    padding: 16px 0;
+    background: #fff;
+    color: #111;
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: $screen-md-min) {
+      position: relative;
+    }
+    .content-wrapper {
+      /* Small devices (tablets, 768px and up) */
+      @media (min-width: $screen-sm-min) {
+        padding: 0 16px;
+      }
+      /* Medium devices (desktops, 992px and up) */
+      @media (min-width: $screen-md-min) {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      >div + div {
+        margin-top: 16px;
+        /* Medium devices (desktops, 992px and up) */
+        @media (min-width: $screen-md-min) {
+          margin-top: 0;
+        }
+      }
+    }
+    .aspect-ratio {
+      position: relative;
+      padding-bottom: 56.25%; /* 16: 9 ; 4: 3 is 75% */
+      padding-top: 25px;
+      height: 0;
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+.center-wrap {
+  margin: 0 20%;
+  position: relative;
+  >div {
+    margin: 0 20px;
+  }
+}
+.video .media-info {
+  overflow: hidden;
+  vertical-align: top;
+  margin-top: 0;
+  font-size: $headline;
+  /* Small devices (tablets, 768px and up) */
+  @media (min-width: $screen-sm-min) {
+    font-size: $display1;
+  }
+  > * + * {
+    margin-top: 16px;
+  }
+  a {
+    color: $kosher-yellow;
+    opacity: 0.87;
+  }
+  span {
+    display: inline-block;
+    i {
+      color: $kosher-yellow;
+    }
+  }
+  ul.social-media {
+    padding: 0;
+    font-size: $display1;
+    @media (min-width: $screen-sm-min) {
+      font-size: $display3;
+    }
+    a {
+      padding: 8px;
+    }
+  }
+  ul li a i ,
+  p a,
+  span a {
+    color: $kosher-yellow;
+  }
+}
+

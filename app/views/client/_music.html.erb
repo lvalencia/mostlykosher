@@ -1,24 +1,24 @@
 <div class="row music" id="music" data-parallax="base">
   <div class="header">
-    <%= render partial: 'separator', locals: {color:'#e7b009', text:'MUSIC' } %>
+    <%= render partial: 'separator', locals: { color:'#e7b009', text: I18n.t(:header, scope: [:client, :music]) } %>
   </div>
-  <div class="video col-md-12">
+  <div class="video col col-lg-12 col-md-12 col-sm-12">
     <div class="content-wrapper">
-      <div class="col-md-6">
+      <div class="video-media col-md-6 col-sm-12">
         <div class="aspect-ratio">
           <iframe width="854" height="480" src="https://www.youtube.com/embed/iEE3E-snUcs" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
-      <div class="media-info col-md-6">
-        <h4>
-          <span><i class="fa fa-arrow-circle-left"></i></span>
-          <a target="_blank" href="https://www.youtube.com/user/MostlyKosherBand"><%= 'Check out our latest music video and subscribe to our youtube channel'.titlecase %></a>
-        </h4>
+      <div class="media-info col-md-6 col-sm-12">
+        <a target="_blank" href="https://www.youtube.com/user/MostlyKosherBand">
+          <i class="fa fa-arrow-circle-left"></i>
+          <%= I18n.t(:call_to_action, scope: [:client, :music]) %>
+        </a>
         <span class="media-push">
           Go to our <a href="https://www.youtube.com/user/MostlyKosherBand">Youtube Channel</a><br/> or share on <a href="https://www.facebook.com/pages/Mostly-Kosher/111211355657165">Facebook</a>, <a href="https://twitter.com/mostlykosher">Twitter</a>, <a href="http://instagram.com/mostlykosher/">Instagram</a>, <a href="https://soundcloud.com/mostly-kosher">SoundCloud</a>, &amp; <a href="http://www.reverbnation.com/mostlykosher">ReverbNation</a>
         </span>
         <ul class="social-media">
-          <!-- On Click Generate Share Links -->
+          <%# On Click Generate Share Links %>
           <li><a href="https://www.facebook.com/pages/Mostly-Kosher/111211355657165"><i class="fa fa-facebook-square"></i></a></li>
           <li><a href="https://twitter.com/mostlykosher"><i class="fa fa-twitter-square"></i></a></li>
           <li><a href="http://instagram.com/mostlykosher/"><i class="fa fa-instagram"></i></a></li>

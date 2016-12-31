@@ -5,7 +5,7 @@ class ClientController < ApplicationController
     @facebook_posts = Post.latest_facebook_posts
     @next_event = Event.next
     @images = Post.latests_with_images.map { |post| post.image.url(:gallery_preview) }
-    @is_ios = request_is_ios
+    @is_iphone = request_is_iphone
   end
 
   def shop
@@ -24,8 +24,8 @@ class ClientController < ApplicationController
 
   private
 
-  def request_is_ios
+  def request_is_iphone
     user_agent = request.env['HTTP_USER_AGENT'].to_s.downcase
-    (user_agent.include?('ipod') || user_agent.include?('ipad') || user_agent.include?('iphone'))
+    user_agent.include?('ipod') || user_agent.include?('iphone')
   end
 end

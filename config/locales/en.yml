@@ -35,6 +35,9 @@ en:
       quote: 'May you grow like an onion with your head on the ground!'
       call_to_action: 'Sign Up!'
       thank_you: Welcome to the Family! Chicken soup is on it's way!
+    music:
+      header: MUSIC
+      call_to_action: Check Out Our Latest Music Video And Subscribe To Our Youtube Channel
   admin:
     navbar:
       events: 'Events'
