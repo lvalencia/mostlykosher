@@ -27,6 +27,7 @@
 //
 //= require shared/event-map.js
 //= require client/promotion.js
+//= require client/newsletter.js
 //= require client/client.js
 //= require client/parallax.js
 //
