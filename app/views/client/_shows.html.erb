@@ -2,30 +2,27 @@
   <div class="header">
     <%= render partial: 'separator', locals: { color: '#336633', text: 'SHOWS' } %>
   </div>
-  <div class="schedule">
+  <div class="schedule col col-lg-12 col-md-12 col-sm-12">
     <div class="gig-info">
-      <div class="row">
-        <div class="col-xs-6">
-        </div>
-        <div class="col-xs-6">
-          <h3>UPCOMING EVENTS</h3>
-        </div>
+
+      <div class="col-sm-6 hidden-xs">
       </div>
-      <div class="row">
-        <div class="col-xs-6">
-          <div id="map_canvas" data-location="<%= @next_event.location if @next_event.present? %>"></div>
-        </div>
-        <div class="col-xs-6">
-          <%= render partial: 'upcoming_event', :locals => { event: @next_event } %>
-        </div>
+      <div class="upcoming col-sm-6 hidden-xs">
+        <h3>UPCOMING EVENTS</h3>
       </div>
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="booking">
-            <p class="booking"><a href="/shows">Click Here</a> to see a full list of upcoming and past shows!</p>
-          </div>
-        </div>
+
+      <div class="col-sm-6 col-xs-12">
+        <div id="map_canvas" data-location="<%= @next_event.present? ? @next_event.location : '1313 Disneyland Dr, Anaheim, CA 92802' %>"></div>
       </div>
+      <div class="col-sm-6 col-xs-12">
+        <%= render partial: 'upcoming_event', locals: { event: @next_event } %>
+      </div>
+
+      <div class="col-xs-12">
+        <p class="booking"><a href="/shows">Click Here</a> to see a full list of upcoming and past shows!</p>
+      </div>
+
+      <div class="clearfix"></div>
     </div>
   </div>
 </div>

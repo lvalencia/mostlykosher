@@ -1,27 +1,28 @@
 <% if not event.nil? %>
-<div class="upcoming-event">
-    <div class="header">
-       <h1><%= event.date.strftime("%b %d, %Y") %></h1>
-       <h3><%= event.title %></h3>
+    <div class="upcoming-event">
+      <div class="header">
+        <h1><%= event.date.strftime('%b %d, %Y') %></h1>
+        <h3><%= event.title %></h3>
+      </div>
+      <div class="content">
+        <span><%= auto_link(event.description.html_safe) unless event.description.nil? %></span>
+      </div>
+      <div class="footer">
+        <a href="<%= event.link %>">BUY TICKETS</a>
+      </div>
     </div>
-    <div class="content">
-        <span><%= auto_link(event.description.html_safe) if not event.description.nil? %></span>
-    </div>
-    <div class="footer">
-       <a href="<%= event.link %>">BUY TICKETS</a>
-    </div>
-</div>
 <% else %>
-<div class="upcoming-event">
-    <div class="header">
-       <h1>Stay Tuned for upcoming Events</h1>
-       <h3 style="color:#333;">In the meantime check out our day to day shenanigans</h3>
+    <div class="upcoming-event">
+      <div class="header">
+        <h1>Stay Tuned for upcoming Events</h1>
+        <h3 style="color:#333;">In the meantime check out our day to day shenanigans</h3>
+      </div>
+      <div class="content">
+        <br />
+        <a href="https://www.facebook.com/pages/Mostly-Kosher/111211355657165"><i class="fa fa-facebook-square"></i><span> Facebook</span><br /></a>
+        <a href="https://twitter.com/mostlykosher"><i class="fa fa-twitter-square"></i><span> Twitter</span><br /></a>
+        <a href="http://instagram.com/mostlykosher/"><i class="fa fa-instagram"></i><span> Instagram</span><br /></a>
+      </div>
+      <div style="margin-top:16px;"></div>
     </div>
-    <div class="content">
-       <br />
-       <a href="https://www.facebook.com/pages/Mostly-Kosher/111211355657165"><i class="fa fa-facebook-square"></i><span> Facebook</span><br /></a>
-       <a href="https://twitter.com/mostlykosher"><i class="fa fa-twitter-square"></i><span> Twitter</span><br /></a>
-       <a href="http://instagram.com/mostlykosher/"><i class="fa fa-instagram"></i><span> Instagram</span><br /></a>
-    </div>
-</div>
 <% end %>

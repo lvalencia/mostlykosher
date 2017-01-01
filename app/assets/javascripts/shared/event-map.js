@@ -32,8 +32,8 @@ var EventMap = (function ($) {
       geocoder.geocode({ address:address }, function (results, status) {
         if (status === google.maps.GeocoderStatus.OK) {
           //Add InfoWindow
-          var contentString = '<p class="title">'+infoTitle+'</p>';
-          contentString += '<p class="info">'+results[0]["formatted_address"]+'</p>';
+          var contentString = '<p class="g-title">'+infoTitle+'</p>';
+          contentString += '<p class="g-info">'+results[0]["formatted_address"]+'</p>';
           var infowindow = new google.maps.InfoWindow({
             content: contentString,
           });

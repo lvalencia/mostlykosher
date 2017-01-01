@@ -1,0 +1,79 @@
+@import 'bootstrap/_variables';
+@import 'shared/material-design';
+@import 'shared/kosher-colors';
+
+.shows {
+  .header {
+    position: relative;
+    > div.separator {
+      margin-top: 0;
+    }
+  }
+  .schedule {
+    background: #fff;
+    padding: 8px 16px 16px 16px;
+  }
+}
+.gig-info {
+  > * + * {
+    margin-top: 16px;
+  }
+  .upcoming {
+    h3 {
+      font-size: $display1;
+    }
+  }
+  h3 {
+    margin: 0 auto;
+    font-size: $title;
+    font-weight: normal;
+  }
+  .booking a {
+    color: $kosher-green;
+  }
+  p.booking {
+    font-size: $title;
+  }
+}
+.upcoming-event {
+  border: 2px solid $kosher-green;
+  margin-left: 0;
+  .header,
+  .content,
+  .footer {
+    padding: 0 16px;
+  }
+  h3 {
+    font-weight: normal;
+    font-size: $headline;
+  }
+  .header {
+    h1,
+    h3 {
+      color: $kosher-green;
+    }
+  }
+  .content {
+    a {
+      font-size: $display1;
+      color: $kosher-green;
+      span {
+        font-size: $subheading;
+      }
+    }
+  }
+  .footer {
+    margin-top: 16px;
+    background-color: $kosher-green;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    a {
+      color: #fff;
+      margin: 0 auto;
+      position: relative;
+      top: 25%;
+      font-size: $title;
+    }
+  }
+}

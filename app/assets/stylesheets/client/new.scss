@@ -1,7 +1,7 @@
 @import 'bootstrap/_variables';
 @import 'shared/material-design';
 @import 'shared/kosher-colors';
-/* Whats Nu */
+
 #new {
   padding: 0;
   width: 100%;
@@ -162,8 +162,7 @@
   font-size: 0;
   line-height: 0;
 }
-.info-card .footer,
-.upcoming-event .footer {
+.info-card .footer {
   width:100%;
   height:60px;
   background-color:$kosher-orange;
