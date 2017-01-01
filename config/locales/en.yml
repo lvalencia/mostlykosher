@@ -38,6 +38,20 @@ en:
     music:
       header: MUSIC
       call_to_action: Check Out Our Latest Music Video And Subscribe To Our Youtube Channel
+    album:
+      header: Mostly Kosher's Debut Album
+      hanukkah: 'Looking for a gift for next Hanukkah?'
+      order_album: 'Order your Mostly Kosher CD now!'
+      cd_baby: Want both cuz you love us? CDBaby's got it!
+      hard_copy: 'Want a hard copy with full translations and program notes?'
+      digial_download: 'Want a digital download?'
+      call_to_action: 'Buy it here!'
+    shows:
+      header: SHOWS
+      upcoming: UPCOMING EVENTS
+      stay_tuned: Stay Tuned for upcoming Events
+      call_to_action: BUY TICKETS
+      shenanigans: In the meantime check out our day to day shenanigans
   admin:
     navbar:
       events: 'Events'

@@ -3,21 +3,32 @@
     <div class="debut">
       <div class="text col-md-6 col-sm-6">
         <div class="buy">
-          <h1>Mostly Kosher's Debut Album</h1>
+          <h1><%= I18n.t(:header, scope: [:client, :album]) %></h1>
           <p class="hidden-xs">
-            Looking for a gift for next Hanukkah<br/>Order your Mostly Kosher CD now!<br/><br/>
-            Want a hard copy with full translations and program notes? Order from our website or
-            Want a digital download? We're on <a target="_blank" class="itunes" href="https://itunes.apple.com/us/album/mostly-kosher/id937980288">iTunes!</a>
+            <%= I18n.t(:hanukkah, scope: [:client, :album]) %>
+            <br/>
+            <%= I18n.t(:order_album, scope: [:client, :album]) %>
+            <br/><br/>
+            <%= I18n.t(:hard_copy, scope: [:client, :album]) %>&nbsp;
+            Order from our website or&nbsp;
+            <%= I18n.t(:digial_download, scope: [:client, :album]) %>&nbsp;
+            We're on <a target="_blan^k" class="itunes" href="https://itunes.apple.com/us/album/mostly-kosher/id937980288">iTunes!</a>
           </p>
-          <p class="hidden-xs">Want both cuz you love us? CDBaby's got it!</p>
-          <a class="btn hidden-xs" target="_blank" href="http://www.cdbaby.com/cd/mostlykosher">Buy it here!</a>
+          <p class="hidden-xs">
+            <%= I18n.t(:cd_baby, scope: [:client, :album]) %>
+          </p>
+          <a class="btn hidden-xs" target="_blank" href="http://www.cdbaby.com/cd/mostlykosher">
+            <%= I18n.t(:call_to_action, scope: [:client, :album]) %>
+          </a>
         </div>
       </div>
       <div class="album col-md-6 col-sm-6">
         <div class="cover">
-          <img src="<%= image_path 'album-cover.png' %>">
+          <%= image_tag 'album-cover.png' %>
         </div>
-        <a class="btn hidden-lg hidden-md hidden-sm" target="_blank" href="http://www.cdbaby.com/cd/mostlykosher">Buy it here!</a>
+        <a class="btn hidden-lg hidden-md hidden-sm" target="_blank" href="http://www.cdbaby.com/cd/mostlykosher">
+          <%= I18n.t(:call_to_action, scope: [:client, :album]) %>
+        </a>
       </div>
       <div class="clearfix"></div>
     </div>
