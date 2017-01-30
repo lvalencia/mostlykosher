@@ -1,0 +1,27 @@
+@import 'bootstrap/_variables';
+@import 'shared/material-design';
+@import 'shared/kosher-colors';
+
+footer {
+  .top-footer {
+    background: $kosher-orange;
+    padding: 8px 16px;
+    a {
+      color: white;
+    }
+  }
+  .bottom {
+    background: black;
+    padding: 8px 16px;
+  }
+  .top-footer,
+  .bottom {
+    p {
+      color: $kosher-white;
+      margin: 0 auto;
+      text-align: center;
+      font-size: $title;
+    }
+  }
+}
+
