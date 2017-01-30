@@ -1,0 +1,30 @@
+@import 'bootstrap/_variables';
+@import 'shared/material-design';
+@import 'shared/kosher-colors';
+
+#gallery {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.gallery {
+  .content {
+    padding: 24px 16px 32px 16px;
+    #gallery-preview {
+      padding: 24px 0;
+     .owl-item img {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+    .more-pictures p {
+      font-size: $title;
+      a {
+        color: $kosher-red;
+      }
+    }
+  }
+  .header {
+    position: relative;
+  }
+}

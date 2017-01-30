@@ -10,7 +10,7 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
+//= require jquery3
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
@@ -19,15 +19,14 @@
 //
 // Vendor Imports
 //
-//= require moment.js
-//= require owl.carousel.min.js
-//= require timeago.js
+//= require owl.carousel2-2.2.0.min.js
 //
 // Our Imports
 //
 //= require shared/event-map.js
 //= require client/promotion.js
 //= require client/newsletter.js
+//= require client/carousel.js
 //= require client/client.js
 //= require client/parallax.js
 //

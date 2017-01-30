@@ -52,6 +52,11 @@ en:
       stay_tuned: Stay Tuned for upcoming Events
       call_to_action: BUY TICKETS
       shenanigans: In the meantime check out our day to day shenanigans
+    about:
+      header: 'ABOUT MOSTLY KOSHER'
+      subheading: 'Mostly Kosher'
+    gallery:
+      header: GALLERY
   admin:
     navbar:
       events: 'Events'

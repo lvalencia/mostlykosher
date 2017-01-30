@@ -4,25 +4,19 @@
 @import 'shared/kosher-colors';
 
 .about {
-  min-height:720px;
-  img {
-    width:100%;
-  }
+  min-height: 720px;
   h3, h4 {
     color: $kosher-white;
   }
   h3 {
     font-size: $display1;
-    font-weight:lighter;
-    max-width:1480px;
-    margin:25px auto;
+    font-weight: lighter;
+    margin: 16px auto 32px auto;
   }
   h4 {
     font-size: $title;
   }
   .bio {
-    max-width:1480px;
-    margin:25px auto;
     p {
       color: $kosher-white;
       font-size: $body1;

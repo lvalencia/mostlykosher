@@ -15,8 +15,8 @@
  * Vendor
  *
  *= require font-awesome.css
- *= require owl.carousel.css
- *= require owl.theme.css
+ *= require owl.carousel-2.2.0.min.css
+ *= require owl.theme.default-2.2.0.min.css
  *
  * Our Imports
  *
@@ -31,6 +31,7 @@
  *= require client/album.scss
  *= require client/shows.scss
  *= require client/about.scss
+ *= require client/gallery.scss
  *= require client/tour.scss
  *= require client/residency.scss
  *= require shared/event-map.scss

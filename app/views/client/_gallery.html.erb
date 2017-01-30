@@ -1,25 +1,21 @@
 <div class="row gallery" id="gallery" data-parallax="base">
-   <div class="header">
-      <%= render partial: 'separator', :locals => {color:"#9b200c", text:"GALLERY" } %>
-   </div>
-   <div class="content">
-      <div class="container gallery-wrapper">
-         <div id="gallery-preview" class="owl-carousel">
-            <% @images.each do |image| %>
-               <div class="slide"> 
-                  <div class="slide-image">
-                      <img src="<%= image %>">
-                  </div>
-               </div>
-            <% end %>
-         </div>
-         <div class="more-pictures">
-<!--
-            <p>Click to see more picture from our <a href="/">Gallery!</a></p>
--->
-            <p><a href="http://instagram.com/mostlykosher/">or check out our Instagram >> <i class="fa fa-instagram"></i></a></p>
-            <p><a href="/press-pics.zip">Hi-Res Press Photos here</a>.</p>
-         </div>
-      </div>
-   </div>
+  <div class="header">
+    <%= render partial: 'separator', locals: { color: '#9b200c', text: I18n.t(:header, scope: [:client, :gallery])  } %>
+  </div>
+  <div class="content col col-lg-12 col-md-12 col-sm-12">
+    <div id="gallery-preview" class="owl-carousel">
+      <% @images.each do |image| %>
+          <div class="slide">
+            <div class="slide-image">
+              <img src="<%= image %>">
+            </div>
+          </div>
+      <% end %>
+    </div>
+    <div class="more-pictures">
+      <p>Click to see more picture from our <%= link_to 'Gallery!',  gallery_path %></p>
+      <p><a href="http://instagram.com/mostlykosher/">or check out our Instagram >> <i class="fa fa-instagram"></i></a></p>
+      <p><a href="/press-pics.zip">Hi-Res Press Photos here</a>.</p>
+    </div>
+  </div>
 </div>

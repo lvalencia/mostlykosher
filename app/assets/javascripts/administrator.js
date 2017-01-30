@@ -19,7 +19,6 @@
 // Vendor Imports
 //
 //= require owl.carousel.min.js
-//= require timeago.js
 //
 // Our Imports
 //
