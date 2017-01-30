@@ -6,15 +6,6 @@ body {
   font-family:kosher;
   src: url(<%= asset_path 'stencilstd.otf' %>);
 }
-@font-face {
-  font-family:railway;
-  src: url(<%= asset_path 'raleway-regular.otf' %>);
-}
-@font-face {
-  font-family:railway;
-  src: url(<%= asset_path 'raleway-light.otf' %>);
-  font-weight:lighter;
-}
 /* Top New */
 .kosher {
   font-family:kosher;
@@ -68,26 +59,6 @@ body {
   background:#000 url(<%= image_path 'band-image-about.png' %>) 50% 50%;
   background-size: 1890px auto !important;
   overflow-y:scroll;
-}
-.about {
-  min-height:720px;
-}
-.about img {
-  width:100%;
-}
-.about h3 {
-  font-size:3em;
-  font-weight:lighter;
-  color:#fff;
-  max-width:1480px;
-  margin:25px auto;
-}
-.about .bio p {
-  color:#fff;
-}
-.about .bio {
-  max-width:1480px;
-  margin:25px auto;
 }
 /* Gallery Section */
 .gallery .content {
@@ -245,7 +216,7 @@ footer .bottom {
 }
 #upcoming h1, #previous h1 {
   margin-left: 9.5%;
-  font-family: railway;
+  font-family: 'Roboto', sans-serif;
   font-weight: lighter;
   font-size: 6em;
 }

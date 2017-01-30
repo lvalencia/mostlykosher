@@ -1,0 +1,32 @@
+/* About Section */
+@import 'bootstrap/_variables';
+@import 'shared/material-design';
+@import 'shared/kosher-colors';
+
+.about {
+  min-height:720px;
+  img {
+    width:100%;
+  }
+  h3, h4 {
+    color: $kosher-white;
+  }
+  h3 {
+    font-size: $display1;
+    font-weight:lighter;
+    max-width:1480px;
+    margin:25px auto;
+  }
+  h4 {
+    font-size: $title;
+  }
+  .bio {
+    max-width:1480px;
+    margin:25px auto;
+    p {
+      color: $kosher-white;
+      font-size: $body1;
+    }
+  }
+}
+
