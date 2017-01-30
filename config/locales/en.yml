@@ -4,11 +4,11 @@
 #
 # To use the locales, use `I18n.t`:
 #
-#     I18n.t 'hello'
+#     I18n.t hello
 #
 # In views, this is aliased to just `t`:
 #
-#     <%= t('hello') %>
+#     <%= t(hello) %>
 #
 # To use a different locale, set it with `I18n.locale`:
 #
@@ -21,31 +21,31 @@
 
 en:
   authentication:
-    failed: 'Failed to login.'
+    failed: Failed to login.
   client:
     top_new:
-      band_name: 'Mostly Kosher'
-      subheading: 'word to your bubbe'
+      band_name: Mostly Kosher
+      subheading: word to your bubbe
     news:
-      header: WHAT'S NU?
-      title: 'Oy, do people love us!'
+      header: WHATS NU?
+      title: Oy, do people love us!
     sign_up:
-      title: Don't be a shmendrick!
-      subtitle: 'Sign up for our Newsletter!'
-      quote: 'May you grow like an onion with your head on the ground!'
-      call_to_action: 'Sign Up!'
-      thank_you: Welcome to the Family! Chicken soup is on it's way!
+      title: Dont be a shmendrick!
+      subtitle: Sign up for our Newsletter!
+      quote: May you grow like an onion with your head on the ground!
+      call_to_action: Sign Up!
+      thank_you: Welcome to the Family! Chicken soup is on its way!
     music:
       header: MUSIC
       call_to_action: Check Out Our Latest Music Video And Subscribe To Our Youtube Channel
     album:
-      header: Mostly Kosher's Debut Album
-      hanukkah: 'Looking for a gift for next Hanukkah?'
-      order_album: 'Order your Mostly Kosher CD now!'
-      cd_baby: Want both cuz you love us? CDBaby's got it!
-      hard_copy: 'Want a hard copy with full translations and program notes?'
-      digial_download: 'Want a digital download?'
-      call_to_action: 'Buy it here!'
+      header: Mostly Koshers Debut Album
+      hanukkah: Looking for a gift for next Hanukkah?
+      order_album: Order your Mostly Kosher CD now!
+      cd_baby: Want both cuz you love us? CDBabys got it!
+      hard_copy: Want a hard copy with full translations and program notes?
+      digial_download: Want a digital download?
+      call_to_action: Buy it here!
     shows:
       header: SHOWS
       upcoming: UPCOMING EVENTS
@@ -53,8 +53,8 @@ en:
       call_to_action: BUY TICKETS
       shenanigans: In the meantime check out our day to day shenanigans
     about:
-      header: 'ABOUT MOSTLY KOSHER'
-      subheading: 'Mostly Kosher'
+      header: ABOUT MOSTLY KOSHER
+      subheading: Mostly Kosher
     gallery:
       header: GALLERY
       call_to_action: Click to see more picture from our
@@ -77,13 +77,13 @@ en:
       band_name: MOSTLY KOSHER
   admin:
     navbar:
-      events: 'Events'
-      reviews: 'Reviews'
+      events: Events
+      reviews: Reviews
     event:
-      missing_title: 'No Title'
-      missing_link: 'No Link'
-      missing_location: 'No Location'
-      missing_description: 'No Description'
+      missing_title: No Title
+      missing_link: No Link
+      missing_location: No Location
+      missing_description: No Description
     reviews:
-      missing_link: 'No Link'
-      missing_ordering: 'No Order Specified'
+      missing_link: No Link
+      missing_ordering: No Order Specified
