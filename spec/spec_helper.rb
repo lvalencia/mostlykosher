@@ -19,6 +19,9 @@
 
 # Load Dependencies
 require 'bcrypt'
+require 'chronic'
+require 'active_support'
+require 'active_support/core_ext'
 # Load Classes Directory
 Dir['./app/classes/*.rb'].each do |file|
   require file
