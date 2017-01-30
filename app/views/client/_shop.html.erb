@@ -2,9 +2,13 @@
   <div data-parallax="wrapper">
     <div class="info col col-lg-12 col-md-12 col-sm-12">
       <div class="inner-wrap">
-        <h3>New in Shop</h3>
-        <p>Get your<br/> MOSTLY KOSHER<br/> T-Shirt NOW!</p>
-        <p><a href="/shop">Visit our shop <i class="fa fa-arrow-right"></i></a></p>
+        <h3><%= I18n.t(:header, scope: [:client, :shop]) %></h3>
+        <p><%= I18n.t(:subheading, scope:[:client, :shop]) %></p>
+        <p>
+          <%= link_to shop_path do %>
+              <%= I18n.t(:call_to_action, scope: [:client, :shop]) %> <i class="fa fa-arrow-right"></i>
+          <% end %>
+        </p>
       </div>
     </div>
   </div>

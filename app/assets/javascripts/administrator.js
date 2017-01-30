@@ -16,10 +16,6 @@
 //= require moment
 //= require bootstrap-datetimepicker
 //
-// Vendor Imports
-//
-//= require owl.carousel.min.js
-//
 // Our Imports
 //
 //= require shared/event-map.js

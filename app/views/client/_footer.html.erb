@@ -1,13 +1,25 @@
 <div class="row" id="contact">
   <footer>
     <div class="top-footer col col-lg-12 col-md-12 col-sm-12">
-      <p>Contact Us</p>
-      <p>Call: <a href="tel:714-606-4818">714-606-4818</a></p>
-      <p>Email: info@mostlykosher.com</p>
-      <p>Press: valerie@mostlykosher.com</p>
+      <p><%= I18n.t(:contact_us, scope: [:client, :footer]) %></p>
+      <p>
+        <%= I18n.t(:call, scope: [:client, :footer]) %>
+        <% telephone = I18n.t(:phone_point_of_contact, scope: [:client, :footer]) %>
+        <%= link_to telephone, "tel:#{telephone}" %>
+      </p>
+      <p>
+        <%= I18n.t(:email, scope: [:client, :footer]) %>
+        <% email = I18n.t(:email_point_of_contact, scope: [:client, :footer]) %>
+        <%= link_to email, "mailto:#{email}" %>
+      </p>
+      <p>
+        <%= I18n.t(:press, scope: [:client, :footer]) %>
+        <% press = I18n.t(:press_point_of_contact, scope: [:client, :footer]) %>
+        <%= link_to press, "tel:#{press}" %>
+      </p>
     </div>
     <div class="bottom col col-lg-12 col-md-12 col-sm-12">
-      <p>Copyright <i class="fa fa-copyright"></i> MOSTLY KOSHER</p>
+      <p><%= I18n.t(:copyright, scope: [:client, :footer]) %> <i class="fa fa-copyright"></i> <%= I18n.t(:band_name, scope: [:client, :footer]) %></p>
     </div>
   </footer>
 </div>

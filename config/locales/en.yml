@@ -57,6 +57,24 @@ en:
       subheading: 'Mostly Kosher'
     gallery:
       header: GALLERY
+      call_to_action: Click to see more picture from our
+      gallery_link: Gallery!
+      instagram_link: or check out our Instagram >>
+      press_kit_link: Hi-Res Press Photos here
+    shop:
+      header: New in Shop
+      subheading: Get your MOSTLY KOSHER T-Shirt NOW!
+      call_to_action: Visit our shop
+    footer:
+      contact_us: Contact Us
+      call: 'Call:'
+      phone_point_of_contact: 714-606-4818
+      email: 'Email:'
+      email_point_of_contact: info@mostlykosher.com
+      press: 'Press:'
+      press_point_of_contact: valerie@mostlykosher.com
+      copyright: Copyright
+      band_name: MOSTLY KOSHER
   admin:
     navbar:
       events: 'Events'

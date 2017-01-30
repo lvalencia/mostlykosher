@@ -13,9 +13,18 @@
       <% end %>
     </div>
     <div class="more-pictures">
-      <p>Click to see more picture from our <%= link_to 'Gallery!',  gallery_path %></p>
-      <p><a href="http://instagram.com/mostlykosher/">or check out our Instagram >> <i class="fa fa-instagram"></i></a></p>
-      <p><a href="/press-pics.zip">Hi-Res Press Photos here</a>.</p>
+      <p>
+        <%= I18n.t(:call_to_action, scope: [:client, :gallery]) %>
+        <%= link_to I18n.t(:gallery_link, scope: [:client, :gallery]) %>
+      </p>
+      <p>
+        <%= link_to 'http://instagram.com/mostlykosher/' do %>
+            <%= I18n.t(:instagram_link, scope: [:client, :gallery]) %> <i class="fa fa-instagram"></i>
+        <% end %>
+      </p>
+      <p>
+        <%= link_to I18n.t(:press_kit_link, scope: [:client, :gallery]), '/press-pics.zip' %>
+      </p>
     </div>
   </div>
 </div>
