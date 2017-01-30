@@ -1,17 +1,18 @@
 /* Global Settings */
-body {
-  background-color:#eee;
-}  
 @font-face {
-  font-family:kosher;
+  font-family: kosher;
   src: url(<%= asset_path 'stencilstd.otf' %>);
+}
+body {
+  background-color: #eee;
+  font-family: 'Roboto', sans-serif;
 }
 /* Top New */
 .kosher {
-  font-family:kosher;
+  font-family: kosher;
 }
 .container-fluid {
-  padding:0;
+  padding: 0;
   overflow-x: hidden;
 }
 [data-type=background] {
@@ -23,28 +24,28 @@ body {
   position: relative;
 }
 .social-media li {
-  display:inline;
+  display: inline;
 }
 .social-media a {
-  display:inline-block;
-  padding:10px;
+  display: inline-block;
+  padding: 10px;
 }
 #top {
-  background-image:url(<%= asset_path 'band-image-home.png' %>);
+  background-image: url(<%= asset_path 'band-image-home.png' %>);
 }
 .text-overlay-outer {
-  position:absolute;
-  z-index:10;
+  position: absolute;
+  z-index: 10;
 }
 .text-overlay-inner {
-  position:relative;
-  text-align:center;
+  position: relative;
+  text-align: center;
 }
 /* Whats Nu */
 .separator {
-  min-height:115px;
-  color:#fff;
-  background:#f36b10 url(<%= asset_path 'kosher-logo-white.png' %>) no-repeat 76em -20em;
+  min-height: 115px;
+  color: #fff;
+  background: #f36b10 url(<%= asset_path 'kosher-logo-white.png' %>) no-repeat 76em -20em;
 }
 /* Newsletter Sign up */
 #form {
@@ -52,129 +53,67 @@ body {
 }
 /* Album Section */
 #album {
-  background:url(<%= asset_path 'band-image-album-section.png' %>);
+  background: url(<%= asset_path 'band-image-album-section.png' %>);
 }
 /* About Section */
 #about {
-  background:#000 url(<%= image_path 'band-image-about.png' %>) 50% 50%;
+  background: #000 url(<%= image_path 'band-image-about.png' %>) 50% 50%;
   background-size: 1890px auto !important;
-  overflow-y:scroll;
+  overflow-y: scroll;
 }
 /* Shop Section */
 #shop {
-  background:url(<%= image_path 'shop-background.png' %>);
-}
-.shop {
-  min-height:720px;
-  position:relative;
-}
-.shop .yellow-band {
-  background-color:#e7b009;
-  height:100%;
-  width:320px;
-  position: absolute;
-  z-index:10;
-  opacity:0.6;
-}
-.shop .yellow-band,
-.shop .stacked-shirts {
-  top:0;
-}
-.shop .yellow-band.right {
-  right:5%;
-}
-.shop .yellow-band.left {
-  left:-10%;
+  background: url(<%= image_path 'shop-background.png' %>);
 }
 .shop .tshirt {
   position: absolute;
   background: transparent url(<%= image_path 'kosher-tshirt.png' %>) no-repeat center center;
-  width:520px;
-  height:100%;
-  z-index:15;
-  right:4%;
-}
-.shop .info {
-  max-width: 375px;
-  margin: 0 auto;
-  position: relative;
-  margin-left: 50%;
-  z-index: 20;
-}
-.shop .info .inner-wrap {
-  position: relative;
-  left: -50%;
-  height: 120%;
-  width: 120%;
-  padding: 10%;
-  background:rgba(255,255,255,0.9)
-}
-.shop .info h3,
-.shop .info a {
-  color:#e7b009;
-  font-size:4em;
-}
-.shop .info p {
-  font-size:3.5em;
-  font-weight: lighter;
-}
-.shop .info a {
-  font-size:1em;
-  font-weight:normal;
-}
-@media screen and (max-width:768px) {
-  .shop .info h3,
-  .shop .info a {
-    font-size:3em;
-  }
-  .shop .info p {
-    font-size:2.5em;
-  }
-  .shop .info a {
-    font-size:1em;
-  }
+  width: 520px;
+  height: 100%;
+  z-index: 15;
+  right: 4%;
 }
 .shop .stacked-shirts {
-  position:absolute;
-  left:0;
-  z-index:8;
-  height:100%;
-  width:680px;
+  position: absolute;
+  left: 0;
+  z-index: 8;
+  height: 100%;
+  width: 680px;
   background: transparent url(<%= image_path 'stacked-shirts.png' %>) no-repeat left center;
-  background-size:cover;
+  background-size: cover;
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   filter: grayscale(100%);
 }
 /* footer section */
 footer .top-footer {
-  min-height:120px;
-  background:#f36b10;
-  padding-top:15px;
+  min-height: 120px;
+  background: #f36b10;
+  padding-top: 15px;
 }
 footer .top-footer p,
 footer .bottom p {
-  color:#fff;
-  max-width:400px;
-  margin:0 auto;
-  text-align:center;
-  font-size:1.5em;
+  color: #fff;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.5em;
 }
 footer .top-footer a {
-  color:white;
+  color: white;
 }
 footer .bottom p {
-  padding-top:12px;
+  padding-top: 12px;
 }
 footer .bottom {
   min-height: 60px;
-  background:#111;
+  background: #111;
 }
 /* Shows Page */
 #shows-page {
-  background:white;
-  height:100vh;
-  padding-bottom:25px;
+  background: white;
+  height: 100vh;
+  padding-bottom: 25px;
 }
 #upcoming h1, #previous h1 {
   margin-left: 9.5%;
@@ -184,23 +123,23 @@ footer .bottom {
 }
 #shows-page .event {
   margin-left: 10%;
-  margin-bottom:32px;
+  margin-bottom: 32px;
 }
 #shows-page .event p {
-  font-weight:bold;
-  font-size:1.25em;
+  font-weight: bold;
+  font-size: 1.25em;
 }
 #shows-page .event h3 {
-  margin-top:0;
+  margin-top: 0;
 }
-@media(max-width:992px) {
+@media(max-width: 992px) {
   .separator h1 {
-    font-size:6em;
+    font-size: 6em;
   }
 }
-@media(max-width:1200px) {
+@media(max-width: 1200px) {
   .new-content .main {
-    text-align:center;
+    text-align: center;
   }
 }
 .debut,

@@ -1,0 +1,63 @@
+@import 'bootstrap/_variables';
+@import 'shared/material-design';
+@import 'shared/kosher-colors';
+
+.shop {
+  min-height: 720px;
+  position: relative;
+  .yellow-band {
+    background-color: #e7b009;
+    height: 100%;
+    width: 320px;
+    position: absolute;
+    z-index: 10;
+    opacity: 0.6;
+  }
+  .yellow-band,
+  .stacked-shirts {
+    top: 0;
+    &.right {
+      right: 5%;
+    }
+    &.left {
+      left: -10%;
+    }
+  }
+  .info {
+    position: relative;
+    z-index: 20;
+    .inner-wrap {
+      max-width: 378px;
+      position: relative;
+      padding: 24px 16px;
+      margin: 0 auto;
+      /* Small devices (tablets, 768px and up) */
+      @media (min-width: $screen-sm-min) {
+        padding: 64px 24px;
+      }
+      /* Medium devices (desktops, 992px and up) */
+      @media (min-width: $screen-md-min) {
+        max-width: 432px;
+        padding: 72px 24px;
+      }
+      /* Large devices (large desktops, 1200px and up) */
+      @media (min-width: $screen-lg-min) {
+        max-width: 496px;
+      }
+      background: $kosher-white;
+    }
+    h3,
+    a {
+      color: $kosher-yellow;
+      font-size: $display3;
+    }
+    p {
+      font-size: $display2;
+      font-weight: lighter;
+    }
+    a {
+      font-size: $display1;
+      font-weight: normal;
+    }
+  }
+}
