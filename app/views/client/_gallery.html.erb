@@ -13,10 +13,12 @@
       <% end %>
     </div>
     <div class="more-pictures">
+      <%#
       <p>
-        <%= I18n.t(:call_to_action, scope: [:client, :gallery]) %>
-        <%= link_to I18n.t(:gallery_link, scope: [:client, :gallery]) %>
+        <%= I18n.t(:call_to_action, scope: [:client, :gallery])
+        <%= link_to I18n.t(:gallery_link, scope: [:client, :gallery]), gallery_url
       </p>
+      %>
       <p>
         <%= link_to 'http://instagram.com/mostlykosher/' do %>
             <%= I18n.t(:instagram_link, scope: [:client, :gallery]) %> <i class="fa fa-instagram"></i>
