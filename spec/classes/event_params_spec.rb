@@ -23,7 +23,7 @@ describe EventParamsParser do
       parsed_params = subject.new(
         params: params.merge(date: '12/29/2016 4:00 PM', published_at: 'published')
       ).parse
-      expect(parsed_params[:date]).to be_kind_of(Date)
+      expect(parsed_params[:date]).to be_kind_of(Time)
       expect(parsed_params[:published_at]).to be_kind_of(Time)
     end
   end

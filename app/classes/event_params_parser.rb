@@ -4,7 +4,7 @@ class EventParamsParser
   end
 
   def parse
-    params[:date] = Chronic.parse(date).to_date if date.present?
+    params[:date] = Chronic.parse(date) if date.present?
     params[:published_at] = (is_published? ? Time.now : nil)
     params
   end

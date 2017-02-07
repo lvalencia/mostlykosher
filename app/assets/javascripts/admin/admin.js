@@ -3,6 +3,10 @@
     DateTimePicker({
       target: '#datetimepicker'
     }).initialize();
+    Form({
+      target: 'form.edit_event',
+      hooks: [DateTimeHook()]
+    }).listen();
   });
 })(jQuery);
 // Set Google Maps Callback

@@ -19,6 +19,8 @@
 // Our Imports
 //
 //= require shared/event-map.js
-//= require admin/event.js
+//= require admin/date_time_picker.js
+//= require admin/form/date_time_hook.js
+//= require admin/form.js
 //= require admin/admin.js
 //
