@@ -8,6 +8,7 @@
       hooks: [DateTimeHook()]
     }).listen();
     iso8601ToReadable({ target: '.date.iso8601' }).format('MMM Do YYYY');
+    iso8601ToReadable({ target: '.preview.iso8601', raw: true }).format('YYYY MMM D');
   });
 })(jQuery);
 // Set Google Maps Callback
