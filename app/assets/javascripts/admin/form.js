@@ -1,5 +1,5 @@
 var Form = (function ($){
-  return function Form (params) {
+  return function Form(params) {
     var options = {
       target: 'form',
       hooks: []
@@ -20,10 +20,15 @@ var Form = (function ($){
       options.hooks.forEach(function (hook) {
         hook.applyHook.call(this);
       }.bind(this));
-      debugger;
       var url = this.getAttribute('action');
       var data = $(this).serialize();
-      $.post(url, data, ø);
+      $.post(url, data, _successHandler, 'json');
+    };
+
+    function _successHandler(response) {
+      if (response.hasOwnProperty('show')) {
+        location.href = response.show;
+      }
     };
 
     // Interface

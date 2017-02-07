@@ -7,6 +7,7 @@
       target: 'form.edit_event',
       hooks: [DateTimeHook()]
     }).listen();
+    iso8601ToReadable({ target: '.date.iso8601' }).format('MMM Do YYYY');
   });
 })(jQuery);
 // Set Google Maps Callback

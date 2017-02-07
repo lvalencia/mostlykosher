@@ -16,11 +16,16 @@
 //= require moment
 //= require bootstrap-datetimepicker
 //
+// Vendor
+//
+//= require underscore-1.8.3.min.js
+//
 // Our Imports
 //
 //= require shared/event-map.js
 //= require admin/date_time_picker.js
 //= require admin/form/date_time_hook.js
+//= require admin/iso8601_to_readable.js
 //= require admin/form.js
 //= require admin/admin.js
 //

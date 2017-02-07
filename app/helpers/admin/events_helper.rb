@@ -20,7 +20,7 @@ module Admin::EventsHelper
   end
 
   def date(event)
-    return event.date.strftime('%B %d, %Y') if event.date
+    return event.date.iso8601 if event.date
     'No DateTime Set Yet'
   end
 end
