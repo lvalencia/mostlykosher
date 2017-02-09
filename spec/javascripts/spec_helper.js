@@ -4,7 +4,7 @@
 
 var domElement = {};
 (function ($, element) {
-  element.isoDateDOM = function isoDateDOM () {
-    return $('<td class="date iso8601">2016-10-20T00:00:00Z</td>');
+  element.isoDateDOM = function isoDateDOM (utcDate) {
+    return $('<td class="date iso8601">'+utcDate+'</td>');
   }
 })(jQuery, domElement);
