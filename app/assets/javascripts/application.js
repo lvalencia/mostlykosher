@@ -27,6 +27,8 @@
 //= require client/promotion.js
 //= require client/newsletter.js
 //= require client/carousel.js
+//= require client/scroll_to_links.js
+//= require client/navigation.js
 //= require client/client.js
 //= require client/parallax.js
 //

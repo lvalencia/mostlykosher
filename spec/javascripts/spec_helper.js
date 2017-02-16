@@ -7,4 +7,10 @@ var domElement = {};
   element.isoDateDOM = function isoDateDOM (utcDate) {
     return $('<td class="date iso8601">'+utcDate+'</td>');
   }
+  element.navigationBar = function navigationBar (target) {
+    return $('<nav class="navbar"><a href="#'+target+'"></a></nav>');
+  }
+  element.divWithId = function divWithId(id) {
+    $('<div id="scrollLink"></div>');
+  }
 })(jQuery, domElement);

@@ -5,7 +5,6 @@ var Form = (function ($){
       hooks: []
     };
     $.extend(options, params);
-    var ø = Object.create( null );
 
     // Public
     function listen () {
@@ -14,7 +13,6 @@ var Form = (function ($){
     };
 
     // Hoisted
-
     function _submitHandler(e) {
       e.preventDefault();
       options.hooks.forEach(function (hook) {

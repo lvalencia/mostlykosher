@@ -23,7 +23,7 @@ var Newsletter = (function ($){
       });
     }
     return {
-      initNewsletter: newsletterSignUp
+      initialize: newsletterSignUp
     };
   };
 })(jQuery);
