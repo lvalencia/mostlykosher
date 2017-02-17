@@ -1,5 +1,4 @@
 //= require spec_helper
-//= require sinon
 //= require client/scroll_to_links
 
 describe('ScrollToLinks', function () {

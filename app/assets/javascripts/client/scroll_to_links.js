@@ -23,7 +23,6 @@ var ScrollToLinks = (function ($){
     // Inheritance
     return {
       applyBehavior: attachListener
-
     };
   };
 })(jQuery);

@@ -9,7 +9,7 @@ var EventMap = (function ($) {
       var geocoder = new google.maps.Geocoder();
       var map = new google.maps.Map(document.getElementById(options.target), {
         zoom:15,
-        scrollwheel: false,
+        scrollwheel: false
       });
       var center;
       function calculateCenter() {

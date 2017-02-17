@@ -11,6 +11,6 @@ var domElement = {};
     return $('<nav class="navbar"><a href="#'+target+'"></a></nav>');
   }
   element.divWithId = function divWithId(id) {
-    $('<div id="scrollLink"></div>');
+    return $('<div id="scrollLink"></div>');
   }
 })(jQuery, domElement);
