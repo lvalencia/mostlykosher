@@ -21,12 +21,14 @@ describe('navigation', function () {
       $root.append(domElement.navigationBar(idTarget));
       $root.append(domElement.divWithId(idTarget));
 
+      behaviorMock.expects("applyBehavior").once().returns(function () {});
+
       Navigation({
         target: classTarget,
-        roles: [behavior]
+        behaviors: [behavior]
       }).listen();
 
-      behaviorMock.expects("applyBehavior").once().returns(function () {});
+      behaviorMock.verify();
     });
   });
 });
