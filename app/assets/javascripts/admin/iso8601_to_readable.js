@@ -13,7 +13,6 @@ var iso8601ToReadable = (function ($, _){
         $(el).html(_html(formattedDate));
       });
     };
-
     function _html(date) {
       var result = '';
       if (!options.raw) {

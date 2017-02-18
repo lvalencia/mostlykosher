@@ -1,30 +1,20 @@
-(function ($){
+(function ($) {
+  // Set Google Maps Callback
+  window.MostlyKosher = window.MostlyKosher || {};
+  window.MostlyKosher.googleCallback = EventMap().googleCallback;
   // Bindings
-  ready = function () {
-    // Carousels
-    Carousel({
-      target: '#gallery-preview'
-    }).initCarousel();
-    // Newsletter Signup
-    Newsletter({
-      target: 'form#newsletter'
-    }).initNewsletter();
-  };
-  // Navigation Scroll
-  $(document).on("click", "nav ul li a[href^='#']", function(e){
-    e.preventDefault();
-    var header_offset = 40;
-    var delay = 1e3;
-    var target = $($(this).attr("href"));
-    $("html, body").animate({
-      scrollTop:target.offset().top-header_offset
-    }, delay);
-  });
+  function ready () {
+    Carousel({ target: '#gallery-preview' }).initialize();
+    Newsletter({ target: 'form#newsletter' }).initialize();
+    Navigation({
+      target: 'nav',
+      behaviors: [ScrollToLinks({
+        offset: 40,
+        delay: 1e3
+      })]
+    }).listen();
+  }
   // Ready Trigger
   $(document).on('ready page:load turbolinks:load', ready);
-  // Set Google Maps Callback
-  window.MostlyKosher = window.MostlyKosher || {}
-  window.MostlyKosher.googleCallback = EventMap().googleCallback;
-
 })(jQuery);
 

@@ -35,7 +35,7 @@ var Carousel = (function ($) {
       });
     }
     return {
-      initCarousel: startCarousel
+      initialize: startCarousel
     };
   };
 })(jQuery);

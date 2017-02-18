@@ -23,10 +23,16 @@
 //
 // Our Imports
 //
+//= require shared/map/address_geocode_handler
+//= require shared/map/address_geocoder
+//= require shared/map/map_marker
+//= require shared/map/marker_info_window
 //= require shared/event-map.js
 //= require client/promotion.js
 //= require client/newsletter.js
 //= require client/carousel.js
+//= require client/scroll_to_links.js
+//= require client/navigation.js
 //= require client/client.js
 //= require client/parallax.js
 //
