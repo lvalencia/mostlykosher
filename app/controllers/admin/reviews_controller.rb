@@ -76,5 +76,4 @@ class Admin::ReviewsController < AdminController
   def whitelisted_params
     %i(quote link entity ordering)
   end
-
 end

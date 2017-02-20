@@ -8,7 +8,7 @@ module Admin::ReviewsHelper
   end
 
   def link(review)
-    return raw "<a href='#{review.link}' target='_blank'>Click Preview</a>" if review.link.present?
+    return link_to('Click Preview', review.link, target: '_blank') if review.link.present?
     I18n.t(:missing_link, scope: [:admin, :reviews])
   end
 
