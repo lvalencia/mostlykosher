@@ -1,6 +1,6 @@
 <div class="row shows" id="shows" data-parallax="base">
   <div class="header">
-    <%= render partial: 'separator', locals: { color: '#336633', text: I18n.t(:header, scope: [:client, :shows]) } %>
+    <%= render partial: 'client/landing/separator', locals: { color: '#336633', text: I18n.t(:header, scope: [:client, :shows]) } %>
   </div>
   <div class="schedule col col-lg-12 col-md-12 col-sm-12">
     <div class="gig-info">
@@ -17,7 +17,7 @@
         <div id="map_canvas" data-location="<%= @next_event.present? ? @next_event.location : '1313 Disneyland Dr, Anaheim, CA 92802' %>"></div>
       </div>
       <div class="col-sm-6 col-xs-12">
-        <%= render partial: 'upcoming_event', locals: { event: @next_event } %>
+        <%= render partial: 'client/landing/upcoming_event', locals: { event: @next_event } %>
       </div>
 
       <div class="col-xs-12">
