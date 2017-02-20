@@ -1,7 +1,7 @@
 (function admin($) {
   // Set Google Maps Callback
   window.MostlyKosher = window.MostlyKosher || {};
-  window.MostlyKosher.googleCallback = EventMap({ raiseAlert: true }).googleCallback;
+  window.MostlyKosher.googleCallback = GoogleMapsHandler({ raiseAlert: true }).callback;
   // Bindings
   $(document).ready(function adminReady() {
     DateTimePicker({ target: '#datetimepicker' }).initialize();

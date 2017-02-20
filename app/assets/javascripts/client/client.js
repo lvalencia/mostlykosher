@@ -1,7 +1,7 @@
 (function ($) {
   // Set Google Maps Callback
   window.MostlyKosher = window.MostlyKosher || {};
-  window.MostlyKosher.googleCallback = EventMap().googleCallback;
+  window.MostlyKosher.googleCallback = GoogleMapsHandler().callback;
   // Bindings
   function ready () {
     Carousel({ target: '#gallery-preview' }).initialize();

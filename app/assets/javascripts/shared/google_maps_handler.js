@@ -1,4 +1,4 @@
-var EventMap = (function ($) {
+var GoogleMapsHandler = (function ($) {
   return function EventMap(params) {
     var options = {
       target: 'map_canvas',
@@ -6,7 +6,7 @@ var EventMap = (function ($) {
     };
     $.extend(options, params);
 
-    function initializeMap() {
+    function geocodeAddress() {
       var mapElement = document.getElementById(options.target);
       AddressGeocoder({
         geocoder: new google.maps.Geocoder(),
@@ -22,7 +22,7 @@ var EventMap = (function ($) {
     }
 
     return {
-      googleCallback: initializeMap
+      callback: geocodeAddress
     };
   };
 })(jQuery);

@@ -22,7 +22,11 @@
 //
 // Our Imports
 //
-//= require shared/event-map.js
+//= require shared/map/address_geocode_handler
+//= require shared/map/address_geocoder
+//= require shared/map/map_marker
+//= require shared/map/marker_info_window
+//= require shared/google_maps_handler.js
 //= require admin/date_time_picker.js
 //= require admin/form/date_time_hook.js
 //= require admin/iso8601_to_readable.js
