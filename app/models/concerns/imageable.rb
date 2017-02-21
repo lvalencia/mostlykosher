@@ -21,8 +21,8 @@ module Imageable
     end
   end
 
-  def gallery_preivew
-    image.url(:gallery_preivew)
+  def gallery_preview
+    image.url(:gallery_preview)
   end
 
   def gallery_mosaic

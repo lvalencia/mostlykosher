@@ -88,3 +88,6 @@ en:
     reviews:
       missing_link: No Link
       missing_ordering: No Order Specified
+    press_entries:
+      dropzone_message: Drop files here or click to upload.
+      dropzone_needs_click: (If a single image is uploaded the carousel will just display a single image)

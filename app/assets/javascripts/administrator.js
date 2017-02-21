@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.jcrop
 //= require papercrop
 //= require bootstrap-sprockets
 //= require moment
@@ -20,7 +21,7 @@
 // Vendor
 //
 //= require underscore-1.8.3.min.js
-//= require dropzone.js
+
 //
 // Our Imports
 //
