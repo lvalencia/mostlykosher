@@ -79,6 +79,7 @@ en:
     navbar:
       events: Events
       reviews: Reviews
+      press: Press
     event:
       missing_title: No Title
       missing_link: No Link

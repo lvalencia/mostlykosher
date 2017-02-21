@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161228231441) do
+ActiveRecord::Schema.define(version: 20170221013138) do
 
   create_table "accounts", force: :cascade do |t|
     t.string   "email",              limit: 255
@@ -44,18 +44,13 @@ ActiveRecord::Schema.define(version: 20161228231441) do
     t.datetime "updated_at"
   end
 
-  create_table "posts", force: :cascade do |t|
-    t.string   "feed",               limit: 255
-    t.string   "title",              limit: 255
-    t.string   "content",            limit: 255
-    t.datetime "posted_date"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "image_file_name",    limit: 255
-    t.string   "image_content_type", limit: 255
+  create_table "press_entries", force: :cascade do |t|
+    t.string   "image_file_name"
+    t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
-    t.boolean  "pin"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
   end
 
   create_table "reviews", force: :cascade do |t|

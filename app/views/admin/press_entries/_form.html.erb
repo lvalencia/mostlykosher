@@ -1,0 +1,17 @@
+<%= form_for([:admin, @press_entry]) do |f| %>
+  <% if @press_entry.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@press_entry.errors.count, "error") %> prohibited this admin_press_entry from being saved:</h2>
+
+      <ul>
+      <% @press_entry.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
