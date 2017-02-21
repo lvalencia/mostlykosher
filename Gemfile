@@ -53,15 +53,8 @@ end
 
 gem 'rails_autolink'
 
-#Social Media 
-gem 'koala', '~> 1.10.0rc' #Facebook
-gem 'twitter'
-
 #Image Processing
 gem 'paperclip', '~> 4.2'
-
-#Scheduler
-gem 'rufus-scheduler'
 
 #Extra Gems
 gem 'bcrypt'
