@@ -147,6 +147,10 @@ GEM
       cocaine (~> 0.5.5)
       mime-types
       mimemagic (= 0.3.0)
+    papercrop (0.3.0)
+      jquery-rails
+      paperclip (>= 3.4)
+      rails (>= 3.1)
     parser (2.3.3.1)
       ast (~> 2.2)
     poltergeist (1.13.0)
@@ -308,6 +312,7 @@ DEPENDENCIES
   konacha
   momentjs-rails (>= 2.9.0)
   paperclip (~> 4.2)
+  papercrop
   poltergeist
   pry
   pry-byebug
