@@ -18,8 +18,8 @@ class AdminController < ApplicationController
         session[:account] = @account.id
         redirect_to home_path
       end
-    else
-      redirect_to home_path if logged_in?
+    elsif logged_in?
+      redirect_to home_path
     end
   end
 

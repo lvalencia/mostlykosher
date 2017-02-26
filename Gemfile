@@ -53,15 +53,8 @@ end
 
 gem 'rails_autolink'
 
-#Social Media 
-gem 'koala', '~> 1.10.0rc' #Facebook
-gem 'twitter'
-
 #Image Processing
 gem 'paperclip', '~> 4.2'
-
-#Scheduler
-gem 'rufus-scheduler'
 
 #Extra Gems
 gem 'bcrypt'
@@ -69,5 +62,5 @@ gem 'chronic'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'momentjs-rails', '>= 2.9.0'
 gem 'bootstrap3-datetimepicker-rails', '~> 4.17.43'
-
+gem 'papercrop'
 

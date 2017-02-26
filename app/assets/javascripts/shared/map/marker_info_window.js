@@ -11,7 +11,7 @@ var MarkerInfoWindow = (function ($) {
     $.extend(options, params);
 
     // Public
-    function attach() {
+    function attachListener() {
       infoWindow = new google.maps.InfoWindow({ content: _contentHtml() });
       options.marker.addListener('click', _clickHandler);
       if (options.openAutomatically) {
@@ -42,7 +42,7 @@ var MarkerInfoWindow = (function ($) {
 
     // Interface
     return {
-      attach: attach
+      attach: attachListener
     };
   };
 })(jQuery);

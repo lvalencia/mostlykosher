@@ -78,6 +78,9 @@ EachWithObject:
 EmptyLiteral:
   Enabled: false
 
+EmptyMethod:
+  EnforcedStyle: expanded
+
 Encoding:
   Enabled: false
 
@@ -261,10 +264,10 @@ UnderscorePrefixedVariableName:
 Void:
   Enabled: false
 
+# Style
+
 Style/FrozenStringLiteralComment:
   Enabled: false
-
-# Style
 
 Style/IndentationWidth:
   # Number of spaces for each indentation level.

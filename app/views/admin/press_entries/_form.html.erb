@@ -1,0 +1,44 @@
+<%= form_for([:admin, @press_entry]) do |f| %>
+    <% if @press_entry.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@press_entry.errors.count, 'error') %> prohibited this admin_press_entry from being saved:</h2>
+
+          <ul>
+            <% @press_entry.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <% if f.object.image.present? %>
+        <div class="field">
+          <p><strong>Current Image</strong></p>
+          <img src="<%= f.object.gallery_preview %>" />
+        </div>
+    <% end %>
+
+    <% if !f.object.new_record? and f.object.image.present? %>
+        <div class="field">
+          <p><strong>Crop Area</strong></p>
+          <%= f.cropbox :image %>
+        </div>
+        <div class="field">
+          <p><strong>Crop Preview</strong></p>
+          <%= f.crop_preview :image %>
+        </div>
+    <% else %>
+        <div class="field">
+          <%= f.file_field :image %>
+        </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label :published? %>
+      <%= f.check_box :published %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+<% end %>

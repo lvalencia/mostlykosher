@@ -1,7 +1,7 @@
 <div class="container-fluid" id="shows-page">
   <div class="row shows">
     <div class="header">
-      <%= render partial: 'separator', locals: {color: '#336633', text: 'SHOWS', adjustment: 'thin' } %>
+      <%= render partial: 'client/landing/separator', locals: {color: '#336633', text: 'SHOWS', adjustment: 'thin' } %>
     </div>
   </div>
   <%= render partial: 'client/shows/section', locals: { title: 'Upcoming', shows: @upcoming_shows } %>

@@ -29,7 +29,7 @@ class Admin::ReviewsController < AdminController
     respond_to do |format|
       if @admin_review.save
         format.html { redirect_to admin_review_path(@admin_review), notice: 'Review was successfully created.' }
-        format.json { render :show, status: :created, location: admin_reviews(@admin_review) }
+        format.json { render :show, status: :created, location: admin_review_path(@admin_review) }
       else
         format.html { render :new }
         format.json { render json: @admin_review.errors, status: :unprocessable_entity }
@@ -43,7 +43,7 @@ class Admin::ReviewsController < AdminController
     respond_to do |format|
       if @admin_review.update(admin_review_params)
         format.html { redirect_to admin_review_path(@admin_review), notice: 'Review was successfully updated.' }
-        format.json { render :show, status: :ok, location: admin_reviews(@admin_review) }
+        format.json { render :show, status: :ok, location: admin_review_path(@admin_review) }
       else
         format.html { render :edit }
         format.json { render json: @admin_review.errors, status: :unprocessable_entity }
@@ -76,5 +76,4 @@ class Admin::ReviewsController < AdminController
   def whitelisted_params
     %i(quote link entity ordering)
   end
-
 end

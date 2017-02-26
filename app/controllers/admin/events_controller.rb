@@ -62,19 +62,20 @@ class Admin::EventsController < AdminController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_admin_event
-      @admin_event = Event.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def admin_event_params
-      EventParamsParser.new(
-        params: params.require(:event).permit(whitelisted_attributes)
-      ).parse
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_admin_event
+    @admin_event = Event.find(params[:id])
+  end
 
-    def whitelisted_attributes
-      %i(title link location description date published_at)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def admin_event_params
+    EventParamsParser.new(
+      params: params.require(:event).permit(whitelisted_attributes)
+    ).parse
+  end
+
+  def whitelisted_attributes
+    %i(title link location description date published_at)
+  end
 end

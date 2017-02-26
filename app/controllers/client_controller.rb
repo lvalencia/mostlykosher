@@ -1,10 +1,12 @@
 class ClientController < ApplicationController
   def landing
     @reviews = Review.latest_reviews
-    @news_posts = Post.latest_twitter_posts
-    @facebook_posts = Post.latest_facebook_posts
     @next_event = Event.next
-    @images = Post.latests_with_images.map { |post| post.image.url(:gallery_preview) }
+    @images = GalleryPreview.new(
+      limit: 10,
+      order: :desc,
+      unpack: true
+    ).images
     @is_iphone = request_is_iphone
   end
 

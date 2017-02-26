@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Press Entries</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Gallery Preview</th>
+      <th>Published?</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @press_entries.each do |admin_press_entry| %>
+      <tr>
+        <td><%= image_tag(admin_press_entry.gallery_preview) %></td>
+        <td><%= admin_press_entry.published? %></td>
+        <td><%= link_to 'Show', admin_press_entry_path(admin_press_entry) %></td>
+        <td><%= link_to 'Edit', edit_admin_press_entry_path(admin_press_entry) %></td>
+        <td><%= link_to 'Destroy', admin_press_entry_path(admin_press_entry), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Press entry', new_admin_press_entry_path %>

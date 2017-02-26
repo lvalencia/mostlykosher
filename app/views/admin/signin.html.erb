@@ -1,13 +1,18 @@
 <div class="login container text-center vertical-center">
-   <% if flash[:auth_failure] %>
+  <% if flash[:auth_failure] %>
       <div class="error">
-         <span><%= flash[:auth_failure] %></span>
+        <span><%= flash[:auth_failure] %></span>
       </div>
-   <% end %>
-   <form action="/admin/login" method="POST">
-   <input type="hidden" data-token name="authenticity_token" value="<%= form_authenticity_token %>">
-   <input name="user" type="text" placeholder="Username">
-   <input name="password" type="password" placeholder="Password">
-   <button type="submit" class="btn btn-lg btn-primary">Login</button>
-   </form>
+  <% end %>
+  <form action="/admin/login" method="POST">
+    <input type="hidden" data-token name="authenticity_token" value="<%= form_authenticity_token %>">
+    <input name="user" type="text" placeholder="Username">
+    <input name="password" type="password" placeholder="Password">
+    <button type="submit" class="btn btn-lg btn-primary">Login</button>
+  </form>
 </div>
+<style>
+  nav {
+    display:none;
+  }
+</style>
