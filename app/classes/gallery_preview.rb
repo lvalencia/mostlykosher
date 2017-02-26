@@ -20,7 +20,7 @@ class GalleryPreview
   end
 
   def unpack
-    options[:unpack] || false
+    options[:unpack]
   end
 
   attr_reader :options
