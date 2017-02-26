@@ -70,6 +70,7 @@ class Admin::PressEntriesController < AdminController
     # Never trust parameters from the scary internet, only allow the white list through.
     def admin_press_entry_params
       params.fetch(:press_entry, {}).permit(
+        :published,
         :image,
         :image_crop_x,
         :image_crop_y,

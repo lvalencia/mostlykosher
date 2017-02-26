@@ -2,7 +2,11 @@ class ClientController < ApplicationController
   def landing
     @reviews = Review.latest_reviews
     @next_event = Event.next
-    @images = []
+    @images = GalleryPreview.new(
+      limit: 10,
+      order: :desc,
+      unpack: true
+    ).images
     @is_iphone = request_is_iphone
   end
 
