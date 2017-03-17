@@ -3,6 +3,8 @@
 //= require jquery
 //= require moment
 //= require underscore-1.8.3.min.js
+//= require dropzone
+//
 //
 
 var domElement = {};
@@ -22,5 +24,8 @@ var domElement = {};
     };
     $.extend(options, params);
     return $('<div id="'+options.id+'" ></div>');
+  };
+  element.dropzone = function dropzone () {
+    return $('<form class="dropzone" action="#"></form>');
   };
 })(jQuery, domElement);

@@ -5,6 +5,7 @@ class Admin::PressEntriesController < AdminController
   # GET /admin/press_entries.json
   def index
     @press_entries = PressEntry.all
+    @press_entry = PressEntry.new
   end
 
   # GET /admin/press_entries/1

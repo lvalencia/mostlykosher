@@ -1,0 +1,7 @@
+<tr>
+  <td><%= image_tag(admin_press_entry.gallery_preview) %></td>
+  <td><%= admin_press_entry.published? %></td>
+  <td><%= link_to 'Show', admin_press_entry_path(admin_press_entry) %></td>
+  <td><%= link_to 'Edit', edit_admin_press_entry_path(admin_press_entry) %></td>
+  <td><%= link_to 'Destroy', admin_press_entry_path(admin_press_entry), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+</tr>

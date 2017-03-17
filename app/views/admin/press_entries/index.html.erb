@@ -1,5 +1,14 @@
 <p id="notice"><%= notice %></p>
 
+<h1>Create Multiple</h1>
+
+<%= form_for ([:admin, @press_entry]), html: { class: 'dropzone needsclick dz-clickable' } do |f| %>
+    <div class="dz-message needsclick">
+      Drop files here or click to upload.<br>
+      <span class="note needsclick">(Press entries created this way will not be automatically published)</span>
+    </div>
+<% end %>
+
 <h1>Listing Press Entries</h1>
 
 <table>
@@ -10,7 +19,6 @@
       <th colspan="3"></th>
     </tr>
   </thead>
-
   <tbody>
     <% @press_entries.each do |admin_press_entry| %>
       <tr>

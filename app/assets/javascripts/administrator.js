@@ -21,7 +21,7 @@
 // Vendor
 //
 //= require underscore-1.8.3.min.js
-
+//= require dropzone
 //
 // Our Imports
 //
@@ -34,5 +34,7 @@
 //= require admin/form/date_time_hook.js
 //= require admin/iso8601_to_readable.js
 //= require admin/form.js
+//= require admin/press_upload/dom_inserter.js
+//= require admin/press_upload.js
 //= require admin/admin.js
 //

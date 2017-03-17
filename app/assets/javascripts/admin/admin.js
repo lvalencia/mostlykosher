@@ -1,4 +1,6 @@
 (function admin($) {
+  // Dropzone Configuration
+  Dropzone.autoDiscover = false;
   // Set Google Maps Callback
   window.MostlyKosher = window.MostlyKosher || {};
   window.MostlyKosher.googleCallback = GoogleMapsHandler({ raiseAlert: true }).callback;
@@ -14,6 +16,11 @@
       target: '.preview.iso8601',
       raw: true
     }).format('YYYY MMM D');
+    PressUpload({
+      target: 'form.dropzone',
+      param: 'press_entry[image]',
+      successCallback: DomInserter({ target: 'table tbody' }).callback
+    }).initialize();
   });
 })(jQuery);
 
