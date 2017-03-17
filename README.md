@@ -7,10 +7,10 @@ Mostly Kosher is a rails site for the yiddish klesmer-revival band Mostly Kosher
 Mostly Kosher uses a number of open source projects to work properly:
 
 * [Ruby](https://www.ruby-lang.org/en/) - A dynamic, open source programming language
-* [Rails](https://github.com/rails/rails) - web-application framework that includes everything needed to create database-backed web applications according to the MVC pattern
+* [Rails](https://github.com/rails/rails) - web-application framework that includes everything needed to create MVC web applications 
 * [Rspec](http://rspec.info/) - Behaviour Driven Development for Ruby
 * [Twitter Bootstrap](http://getbootstrap.com/) - great UI boilerplate for modern web apps
-* [Konacha](https://github.com/jfirebaugh/konacha) - a Rails engine that allows you to test your JavaScript with the [Mocha](https://mochajs.org/) test framework and [chai](http://chaijs.com/) assertion library.
+* [Konacha](https://github.com/jfirebaugh/konacha) - test your JavaScript with the [Mocha](https://mochajs.org/) test framework and [Chai](http://chaijs.com/) assertion library.
 
 ### Installation
 
