@@ -15,6 +15,7 @@
     }).listen();
   }
   // Ready Trigger
+  $(document).ready(Promotion({ target: "#tour-modal" }).show);
   $(document).on('ready page:load turbolinks:load', ready);
 })(jQuery);
 
