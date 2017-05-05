@@ -11,7 +11,8 @@
   }
   .schedule {
     background: #fff;
-    padding: 8px 16px 16px 16px;
+    padding: 8px 16px 64px 16px;
+
   }
 }
 .gig-info {
@@ -28,11 +29,8 @@
     font-size: $title;
     font-weight: normal;
   }
-  .booking a {
+  a.booking {
     color: $kosher-green;
-  }
-  p.booking {
-    font-size: $title;
   }
 }
 .upcoming-event {
