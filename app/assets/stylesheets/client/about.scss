@@ -17,6 +17,15 @@
     font-size: $title;
   }
   .bio {
+    background: black;
+    max-width: 480px;
+    max-height: 608px;
+    overflow-y: scroll;
+    padding: 16px;
+    h4 {
+      border-bottom: thick solid white;
+      margin-bottom: 16px;
+    }
     p {
       color: $kosher-white;
       font-size: $body1;
