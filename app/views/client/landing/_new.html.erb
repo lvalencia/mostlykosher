@@ -6,6 +6,9 @@
     <div class="main">
       <p><%= I18n.t(:title, scope: [:client, :news]) %></p><br/>
       <%= render partial: 'shared/review', collection: @reviews, as: :review %>
+      <p class="press">
+        <%= link_to I18n.t(:press_kit_link, scope: [:client, :news]), '/press-kit.pdf' %>
+      </p>
       <br/>
     </div>
   </div>

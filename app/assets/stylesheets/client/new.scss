@@ -22,13 +22,11 @@
   }
   .press {
     p {
-      font-size: $headline;
-    }
-    span {
-      font-size: $subheading;
+      font-size: $title;
     }
     a {
-      color:$kosher-orange;
+      color: $kosher-orange;
+      font-size: $headline;
     }
   }
   p {
