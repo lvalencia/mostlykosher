@@ -81,6 +81,7 @@ en:
       events: Events
       reviews: Reviews
       press: Press
+      fans: Fans
     event:
       missing_title: No Title
       missing_link: No Link

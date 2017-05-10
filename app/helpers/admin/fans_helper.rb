@@ -1,0 +1,2 @@
+module Admin::FansHelper
+end

@@ -22,5 +22,6 @@ Rails.application.routes.draw do
     resources :events
     resources :reviews
     resources :press_entries
+    resources :fans, only: [:index]
   end
 end

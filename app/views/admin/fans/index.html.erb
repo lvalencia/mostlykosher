@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Admin Fans</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Email</th>
+      <th colspan="3">Created At</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @admin_fans.each do |admin_fan| %>
+      <tr>
+        <td><%= admin_fan.email %></td>
+        <td><%= admin_fan.created_at.strftime('%b %d, %Y') %></td>
+        <td><%# link_to 'Show', admin_fans_path(admin_fan) %></td>
+        <td><%# link_to 'Edit', edit_admin_fans_path(admin_fan) %></td>
+        <td><%# link_to 'Destroy', admin_fan, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%# link_to 'New Fan', new_admin_fans_path %>
